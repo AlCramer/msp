@@ -1,0 +1,7580 @@
+// Copyright 2011,2016 Al Cramer
+//
+// Licensed under the Apache License, Version 2.0 (the "License");
+// you may not use this file except in compliance with the License.
+// You may obtain a copy of the License at
+//
+// http://www.apache.org/licenses/LICENSE-2.0
+//
+// Unless required by applicable law or agreed to in writing, software
+// distributed under the License is distributed on an "AS IS" BASIS,
+// WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+// See the License for the specific language governing permissions and
+// limitations under the License.
+
+>>Version 1.0
+
+>>Conjunctions
+and
+or
+but
+nor
+
+>>DetStrong
+// These act as the head of determinant phrases
+// ("the boy", "my girls").
+// Definite articles
+a
+an
+the
+// possessives
+my
+your
+our
+his
+// "her" is not strong: it can function as a noun
+their
+its
+
+>>DetWeak
+// These can act as the head of determinant phrases,
+// but can also function as nouns.
+almost all
+almost none
+almost no
+nearly all
+very few
+all
+another
+any
+both
+each
+either
+every
+few
+fewer
+less
+many
+more
+most
+much
+neither
+several
+some
+such
+that
+these
+this
+those
+what
+which
+whose
+one
+two
+three
+four
+five
+six
+seven
+eight
+nine
+ten
+eleven
+twelve
+
+
+>>Names
+// A name parses like a noun (can be subject or object of a verb)
+// but doesn't bind with a determinant.
+
+>>Abbrev
+mr . : Mr.
+ms . : Ms.
+mrs . : Mrs.
+rev . : Rev.
+dr . : Dr.
+hon . : Hon.
+
+>>Contractions
+// These are irregular forms not handled by the lexicon code.
+ain't : is not
+can't : can not
+don't : do not
+d'ye : do you
+d'you : do you
+e'er : ever
+'em : them
+havn't : have not
+i'm : i am
+let's : let us
+ne'er : never
+o'r : over
+shan't : shall not
+there's : there is
+'tis : it is
+'twas : it was
+won't : will not
+
+>>Prepositions
+aboard
+absent
+against
+along
+alongside
+amid
+amidst
+among
+amongst
+around
+aslant
+astride
+athwart
+atop
+barring
+behind
+beneath
+beside
+besides
+between
+beyond
+despite
+down
+except
+failing
+following
+inside
+inside
+like
+mid
+minus
+near
+nearly
+next
+notwithstanding
+off
+opposite
+out
+outside
+past
+per
+plus
+regarding
+round
+save
+than
+throughout
+times
+toward
+underneath
+unlike
+up
+upon
+via
+with
+within
+without
+worth
+anent
+anti
+behither
+betwixt
+circa
+cum
+lieu
+pro
+qua
+re
+sans
+unto
+versus
+vis
+apart
+except
+plus
+save
+ago
+apart
+aside
+away
+hence
+notwithstanding
+withal
+all round
+all around
+
+>>ClausePreps
+// These are words (usually prepositions) that appear at the head
+// of an svo expression, and indicate that the svo is a subordinate
+// clause in some other svo construct.
+after
+afterwards
+before
+since
+during
+while
+when
+because
+whenever
+as
+since
+until
+though
+that
+then
+if
+so
+therefore
+therefor
+as long as
+so long as
+
+
+>>QualPreps
+on
+in
+at
+for
+before
+to
+till
+until
+by
+under
+below
+over
+above
+across
+through
+into
+towards
+onto
+from
+of
+about
+
+>>Query
+who
+whom
+what
+why
+when
+where
+which
+how
+
+>>Verbs
+// first word is root. If verb is irregular, following terms are:
+// 3rdPersonPresent past-simple past-perfect gerund. Ex:
+// "go goes went gone going".
+// root + optional variants can be followed by ": thematic-scheme"
+// Thematic-scheme can be:
+// EVT : experiencer-verb-theme
+// AVE : agent-verb-experiencer
+// AVGT : agent-verb-goal-theme
+// VPQ: verb phrase qualifier: "we BEGAN to eat"
+abandone
+abhor : EVT
+abide
+abound
+absorb
+accept
+account
+accuse
+acknowledge
+act
+add
+admire : EVT
+admit
+adore : EVT
+adorn
+advance : AVGT
+advise
+affect : AVE
+affirm : EVT
+afflict : AVE
+affront : AVE
+aggravate : AVE
+aggrieve : AVE
+agitate : AVE
+agonize : AVE
+agree
+aid
+ail
+aim : EVT
+alarm : AVE
+alienate : AVE
+alight
+allay
+allege
+allocate : AVGT
+allot : AVGT
+alter
+amaze : AVE
+amend
+amuse : AVE
+anger : AVE
+announce
+annoy : AVE
+anoint
+answer
+antagonize : AVE
+apologize
+appall : AVE
+appeal
+appear
+appease : AVE
+appertain
+applaud : EVT
+appoint
+apportion : AVGT
+appreciate : EVT
+approach
+approve
+argue
+arise arises arose arisen arising
+arouse : AVE
+arrest
+arrive
+ascend
+ascribe
+ask
+assemble
+assert
+assign : AVGT
+assist
+astonish : AVE
+astound : AVE
+attach
+attack
+attain
+attempt
+attend
+augment
+avail
+avenge
+aver
+avoid
+awake awakes awoke awaken awaking
+award : AVGT
+awe : AVE
+baffle : AVE
+bake
+balance
+ban
+baptize
+bar
+base
+bat : AVGT
+bear bears bore born bearing
+beat beats beat beaten beating
+beckon
+become becomes became become becoming
+befall befalls befell befallen befalling
+befuddle : AVE
+beg
+beget begets begot begotten begetting
+begin begins began begun beginning : VPQ
+begrudge : EVT
+beguile : AVE
+behave
+behold beholds beheld beheld beholding
+believe : EVT
+belong
+bend bends bent bent bending
+bequeath : AVGT
+bereave
+betray
+bewail : EVT
+bewilder : AVE
+bewitch : AVE
+bid
+bind binds bound bound binding
+bite bites bit bitten biting
+blame
+blaspheme
+bleed bleeds bled bled bleeding
+bless
+blind
+block
+blot
+blow blows blew blown blowing
+boast
+boil
+bomb
+border
+bore : AVE
+borrow
+bother : AVE
+bow
+boycott
+brake
+break breaks broke broken breaking
+breath
+bribe
+bridle
+bring brings brought brought bringing : AVGT
+broadcast broadcasts broadcast broadcast broadcasting : AVGT
+build builds built built building
+burn
+burst bursts burst burst bursting
+bury buries buried buried burying
+buy buys bought bought buying
+call
+calm : AVE
+calve
+cancel
+captivate : AVE
+capture
+care
+carry carries carried carried carrying
+cast casts cast cast casting
+catch catches caught caught catching
+cause
+cease
+cede : AVGT
+celebrate
+chagrin : AVE
+chance
+change
+charge
+charm : AVE
+chase
+chasten
+chastise
+cheat
+cheer : AVE
+cherish : EVT
+chew
+chill : AVE
+choose chooses chose chosen choosing
+claim
+clap
+clash
+clean
+clear
+cleave
+climb
+close
+collect
+combine
+come comes came come coming
+comfort : AVE
+command
+commend
+comment
+commit
+communicate
+compare
+compass
+compel
+compete
+compound
+compress
+compromise
+conceal
+concede : AVGT
+concern : AVE
+conclude
+condemn
+confess
+confirm
+confound : AVE
+confuse : AVE
+congratulate
+connect
+consent
+consider
+consist
+console : AVE
+constrain
+consume
+contain
+contend
+content : AVE
+continue : VPQ
+control
+convert
+convict
+convince : AVE
+cook
+cooperate
+copy copies copied copied copying
+correct
+cost
+counsel
+count
+cover
+covet : EVT
+crash
+crave : EVT
+crawl
+create
+creep creeps crept crept creeping
+criticize
+cross
+crouch
+crowd
+crown
+crush : AVE
+cry cries cried cried crying
+cure
+curse
+curve
+cut cuts cut cut cutting : AVE
+damage
+dance
+dare
+darken
+dash
+daunt : AVE
+daze : AVE
+dazzle : AVE
+deal deals dealt dealt dealing
+debate
+decay
+deceive
+decide
+deck
+declare
+decline
+decrease
+defeat
+defend
+defer
+defile
+define
+deject : AVE
+delay
+delight : AVE
+deliver
+demand
+demolish : AVE
+demonstrate
+demoralize : AVE
+denounce
+deny denies denied denied denying
+depart
+depend
+deplore : EVT
+deploy
+depress : AVE
+deride
+descend
+describe
+deserve
+design
+desire : EVT
+despise : EVT
+destroy
+detest : EVT
+devastate : AVE
+develope
+devise
+devour
+dictate : AVGT
+die dies died died dieing
+differ
+dig digs dug dug digging
+dip
+direct
+disagree
+disappear
+disappoint : AVE
+disarm : AVE
+disbelieve : EVT
+discern
+disclose
+discomfit : AVE
+disconcert : AVE
+discourage : AVE
+discover
+discuss
+disdain : EVT
+disgrace : AVE
+disgruntle : AVE
+disguise
+disgust : AVE
+dishearten : AVE
+dishonor
+disillusion : AVE
+dislike : EVT
+dismay : AVE
+dismiss
+dispirit : AVE
+displease : AVE
+dispossess
+dispute
+disquiet : AVE
+dissatisfy : AVE
+dissemble
+dissolve
+distinguish
+distract : AVE
+distress : AVE
+distribute
+distrust : EVT
+disturb : AVE
+dive dives dove dived diving
+divert : AVE
+divide
+divine
+do does did done doing
+doubt
+draw draws drew drawn drawing
+dread : EVT
+dream : EVT
+dress
+drink drinks drank drunk drinking
+drive drives drove driven driving
+drop
+drown
+dry dries dried dried drying
+dumbfound : AVE
+dwell
+earn
+ease
+eat eats ate eaten eating
+edify edifies edified edified edifying
+effect
+elate : AVE
+elect
+electrify : AVE
+embarrass : AVE
+embolden : AVE
+employ
+empty empties emptied emptied emptying
+encamp
+enchant : AVE
+enclose
+encounter
+encourage : AVE
+end
+endure
+enervate : AVE
+enforce
+engage : AVE
+engross : AVE
+enjoy : EVT
+enlarge
+enlighten : AVE
+enliven : AVE
+enrage : AVE
+enrapture : AVE
+enrich
+entangle
+enter
+entertain : AVE
+enthrall : AVE
+enthuse : AVE
+entice : AVE
+entrance : AVE
+envy envies envied envied envying : EVT
+err
+escape
+establish
+esteem
+estimate
+evaporate
+exact
+exalt : EVT
+examine
+exasperate : AVE
+exceed
+excel
+exchange
+excite : AVE
+exclaim
+excuse
+execrate : EVT
+execute
+exercise
+exhaust : AVE
+exhilarate : AVE
+exhort
+exile
+exist
+expand
+expect : EVT
+expel
+experience
+experiment
+explain
+explode
+explore
+export
+express : AVGT
+extend : AVGT
+exult
+face
+fade
+fail
+faint
+fair
+fall falls fell fallen falling
+fancy : EVT
+fascinate : AVE
+fashion
+fast
+fasten
+fatigue : AVE
+favor : EVT
+fax : AVGT
+faze : AVE
+fear : EVT
+feed feeds fed fed feeding : AVGT
+feel feels felt felt feeling : EVT
+feign
+ferry : AVGT
+fetch
+fight fights fought fought fighting
+fill
+film
+find finds found found finding
+finish : VPQ
+fire
+fit
+fix
+flabbergast : AVE
+flash
+flatter : AVE
+flaunt
+flee flees fled fled fleeing
+flip : AVGT
+float
+flood
+floor : AVE
+flourish
+flow
+fluster : AVE
+flutter
+fly flies flew flown flying : AVGT
+foam
+fold
+follow
+fool
+forbear forbears forbore forborn forbearing
+forbid forbids forbid forbidden forbidding
+force
+forget forgets forgot forgotten forgetting
+forgive forgives forgave forgiven forgiving
+form
+forsake forsakes forsaked forsaken forsaking
+forward : AVGT
+foul
+found
+frame
+free
+freeze freezes froze frozen freezing
+fret frets fretted fretted fretting
+frighten : AVE
+frustrate : AVE
+gad
+gain
+gall : AVE
+galvanize : AVE
+gap
+gasp
+gather
+gaze
+gender
+get gets got gotten getting
+gird
+give gives gave given giving : AVGT
+gladden : AVE
+glance
+glean
+glide
+glory glories gloried gloried glorying
+gnash
+go goes went gone going
+govern
+grant : AVGT
+gratify : AVE
+grieve
+grind grinds ground ground grinding
+groan
+grope
+grow grows grew grown growing
+grumble
+guarantee : AVGT
+guard
+guide
+hallow
+halt
+hand : AVGT
+handle
+hang hung hanged hanged hanging
+happen
+harass : AVE
+harden
+harm : AVE
+harp
+harvest
+haste
+hate : EVT
+haunt : AVE
+have has had had having
+head
+heal
+heap
+hear hears heard heard hearing : EVT
+hearken
+hearten : AVE
+heat
+heave : AVGT
+hedge
+heed
+help
+hew
+hide
+hijack
+hinder
+hire
+hiss
+hit hits hit hit hitting : AVGT
+hold holds held held holding
+honor
+hope : EVT
+horrify : AVE
+humble : AVE
+humiliate : AVE
+hunt
+hurl : AVGT
+hurry hurries hurried hurried hurrying
+hurt hurts hurt hurt hurting : AVE
+identify identifies identified identified identifying
+idolize : EVT
+imagine : EVT
+impair : AVE
+import
+impress : AVE
+improve
+impute
+incense : AVE
+incite
+incline
+include
+increase
+infect
+inflame : AVE
+influence
+inform
+infuriate : AVE
+inhabit
+inherit
+inject
+injure
+inquire
+inspect
+inspire : AVE
+instruct
+insult : AVE
+intend : EVT
+interest : AVE
+interfere
+interrupt
+intervene
+intimidate : AVE
+intoxicate : AVE
+intrigue : AVE
+invade
+invent
+invest
+investigate
+invigorate : AVE
+invite
+involve
+irk : AVE
+irritate : AVE
+issue : AVGT
+jade : AVE
+jar : AVE
+join
+jollify : AVE
+jolt : AVE
+judge
+jump
+justify justifies justified justified justifying
+keep keeps kept kept keeping : VPQ
+kick : AVGT
+kidnap kidnaps kidnapped kidnapped  kidnapping
+kill
+kindle
+kiss
+kneel
+knock
+know knows knew known knowing : EVT
+labor
+lack
+lad
+lament : EVT
+land
+languish
+last
+laugh
+launch
+lay lays laid layed laying
+lead leads led led leading
+leak
+lean
+leap
+learn
+leave leaves left left leaving
+leaven
+lend lends lent lent lending : AVGT
+let lets let let letting
+lick
+lie
+lift
+light
+lighten
+like : EVT
+limit
+linger
+link
+list
+listen
+live
+load
+loan : AVGT
+loathe : EVT
+lodge
+long : EVT
+look
+loose
+lose loses lost lost losing
+love : EVT
+lower
+lull : AVE
+lurk
+lust
+madden : AVE
+magnify magnifies magnified magnified magnifying
+mail : AVGT
+maintain
+make makes made made makin
+manufacture
+march
+mark
+marry marries married married marrying
+marvel
+mate
+mean means meant meant meaning
+measure
+meet meets met met meeting
+melt
+menace : AVE
+mesmerize : AVE
+miff : AVE
+might might might might might
+mind
+minister
+miscarry miscarries miscarried miscarried miscarrying
+miss : EVT
+mix
+moan
+mock
+molest : AVE
+mollify : AVE
+mortify : AVE
+mount
+mourn : EVT
+move : AVE
+muddle : AVE
+multiply multiplies multiplied multiplied multiplying
+murder
+mutter
+mystify : AVE
+name
+nauseate : AVE
+need : EVT
+negotiate
+nettle : AVE
+nominate
+note
+notice
+nourish
+nudge : AVGT
+numb : AVE
+number
+nurse : AVGT
+obey
+observe
+obsess : AVE
+obtain
+occupy : AVE
+offend : AVE
+offer : AVGT
+open
+oppose
+oppress
+order
+outrage : AVE
+overcome overcomes overcame overcame overcoming
+overflow
+overlay overlays overlaid overlaid overlaying
+overtake overtakes overtook overtaken overtaking
+overthrow overthrows overthrew overthrown overthrowing
+overturn
+overwhelm : AVE
+owe : AVGT
+own
+pacify pacifies pacified pacified pacifying : AVE
+pain : AVE
+paint
+pant
+pardon
+part
+partake partakes partook partaken partaking
+pass : AVGT
+paw
+pay
+peddle : AVGT
+peep
+peeve : AVE
+perceive
+perform
+perish
+permit
+perplex : AVE
+persecute
+persist
+persuade
+pertain
+perturb : AVE
+pervert
+pester : AVE
+phone : AVGT
+pick
+picture
+pine
+pique : AVE
+pitch : AVGT
+pity pities pitied pitied pitying : EVT
+placate : AVE
+place
+plague : AVE
+plan plans planned planned planning : EVT
+plant
+play
+plead
+please : AVE
+plot
+plow
+pluck
+point
+pollute
+portion : AVGT
+possess
+postpone
+pour
+practise
+praise
+pray
+preach
+prefer : EVT
+preoccupy : AVE
+prepare
+present
+preserve
+press
+pretend
+prevail
+prevent
+prize : EVT
+proceed
+proclaim
+produce
+profane
+profit
+prolong
+promise : AVGT
+pronounce
+prophesize
+propose : EVT
+prosper
+protect
+protest
+prove
+provide
+provoke : AVE
+publish
+puff
+pull
+pump
+punish
+purchase
+purify purifies purified purified purifying
+purpose
+purr
+pursue
+push : AVGT
+put puts put put putting
+puzzle puzzles puzzeled puzzeled puzzeling : AVE
+quake
+quench : AVE
+question
+quit : VPQ
+quote : AVGT
+race
+radio : AVGT
+rage
+raid
+rain
+raise
+rankle : AVE
+ration : AVGT
+rattle
+ravage
+raven
+ravish : AVE
+reach
+react
+read reads read read reading : AVGT
+reaffirm : EVT
+reap
+reason
+reassure : AVE
+rebel
+rebuke
+receive
+recharge : AVE
+reckon
+recognize
+recompense
+record
+recover
+redeem
+reduce
+refer refers referred referred refering
+reform
+refrain
+refresh : AVE
+refund : AVGT
+refuse
+regard
+regret : EVT
+reign
+reject
+rejoice
+rejuvenate : AVE
+relax : AVE
+relay : AVGT
+release
+relieve : AVE
+relish : EVT
+remain
+remark
+remember
+remove
+rend rends rent rent reding
+render : AVGT
+renew
+renounce
+repay repays repaid repaid repaying
+repeat
+repel : AVE
+repent
+reply replies replied replied replying
+report
+represent
+repress
+reproach
+reprove
+repulse : AVE
+request
+require
+rescue
+resent : EVT
+reserve
+resign
+resist
+respect : EVT
+rest
+restore
+restrain
+restrict
+result
+retain
+retire
+return
+reveal
+revere : EVT
+revile
+revitalize : AVE
+revolt : AVE
+reward
+rid rids rid ridden ridding
+ride rides rode ridden riding
+rile : AVE
+riot
+ripen
+rise rises rose risen rising
+roar
+roast
+rob
+roil : AVE
+roll
+rub rubs rubbed rubbed rubbing
+rue : EVT
+ruffle : AVE
+ruin
+rule
+run ran ran run running
+rush
+sabotage
+sacrifice
+sadden : AVE
+sail
+salute
+sanctify sanctifies sanctified sanctified sanctifying
+satiate : AVE
+satisfy satisfies satisfied satisfied satisfying : AVE
+save
+savor : EVT
+say says said said saying
+scale
+scandalize : AVE
+scare : AVE
+scatter
+scoff
+scorn
+scourge
+scramble
+scream
+screech
+seal
+search
+seduce
+see sees saw seen seeing : EVT
+seek seeks sought sought seeking
+seem
+seize
+sell sells sold sold selling
+send sends sent sent sending : AVGT
+sense
+sentence
+separate
+serve
+set sets set set setting
+settle
+sew
+shake shakes shook shaken shaking : AVE
+shall shall shall shall shall
+shame : AVE
+shape
+share
+sharpen
+shed sheds shed shed shedding
+shell
+shelter
+shine
+ship : AVGT
+shiver
+shock : AVE
+shoot shoots shot shot shooting : AVGT
+shorten
+shout
+shove : AVGT
+show
+shrink shrinks shrunk shrunk shrinking
+shut shuts shut shut shutting
+shuttle : AVGT
+sicken : AVE
+sigh
+sign : AVGT
+signal
+signify signifies signified signified signifying
+silence
+sin
+sing sings sang sung singing
+sink
+sit sits sat sat sitting
+slam : AVGT
+slander
+slap : AVGT
+slash
+slay slays slew slain slaying
+sleep sleeps slept slept sleeping
+slide
+slip : AVGT
+slow
+slumber
+smash : AVGT
+smear
+smell : EVT
+smite smites smote smitten smiting
+smoke
+smooth
+smuggle : AVGT
+snap snaps snapped snapped snapping
+snatch
+sneak : AVGT
+snow
+snuff
+soar
+sob
+sober : AVE
+solace : AVE
+solve
+soothe : AVE
+sound
+sow
+spare
+sparkle
+speak speaks spoke spoken speaking
+speed
+spend spends spent spent spending
+spill
+spook : AVE
+spread spreads spread spread spreading
+spring springs sprung sprung springing
+sprinkle
+spy spies spied spied spying
+squeal
+stab
+stagger
+stand stands stood stood standing
+stake
+start : VPQ
+startle : AVE
+starve
+state
+stay
+steal steals stole stolen stealing
+step
+stick
+still
+stimulate : AVE
+sting stings stung stung stinging : AVE
+stir : AVE
+stone
+stoop
+stop : VPQ
+store
+strengthen
+stretch
+strike strikes struck struck striking : AVE
+strip
+strive
+struggle
+study studies studied studied studying
+stumble
+stump : AVE
+stun : AVE
+stupefy : AVE
+subdue
+substitute
+subvert
+succeed
+sue
+suffer : EVT
+suffice
+suggest
+supervise
+supply supplies supplied supplied supplying
+support : EVT
+suppose : EVT
+suppress
+surpass
+surprise : AVE
+surrender
+surround
+survive : EVT
+suspect : EVT
+suspend
+sustain
+swallow
+swelter
+swarm
+swear swears swore sworn swearing
+sweep sweeps swept swept sweeping
+swim swims swam swum swimming
+swoop
+take takes took taken taking
+talk
+tantalize : AVE
+tap : AVGT
+tarry tarries tarried tarried tarrying
+taste : EVT
+taunt : AVE
+teach teaches taught taught teaching
+tear
+tease : AVE
+teem
+telegraph : AVGT
+telephone : AVGT
+tell tells told told telling : AVGT
+tempt : AVE
+tend
+terrify terrifies terrified terrified terrifying : AVE
+terrorize : AVE
+test
+testify testifies testified testified testifying
+thank : EVT
+think thinks thought thought thinking : EVT
+thirst
+threaten : AVE
+thresh
+thrill : AVE
+throb throbs throbbed throbbed throbbing
+throw throws threw thrown throwing : AVE
+thrust thrusts thrust thrust thrusting : AVGT
+thunder
+tickle : AVE
+tie
+tire : AVE
+titillate : AVE
+toil
+tolerate : EVT
+torment : AVE
+torture : AVE
+touch : AVE
+tower
+trade
+train
+transgress
+transmit : AVGT
+transport : AVE
+trap
+travail
+travel
+tread
+treasure : EVT
+treat
+tremble : EVT
+trick
+trim
+trouble : AVE
+truck : AVGT
+trust : EVT
+try tries tried tried trying
+turn
+uncover
+understand understands understood understood understanding
+unite
+unnerve : AVE
+unsettle : AVE
+upbraid
+uphold upholds upheld upheld upholding
+uplift : AVE
+upset : AVE
+urge
+use uses used used using
+utter
+value : EVT
+vanish
+vaunt
+venerate : EVT
+venture
+veto
+vex : AVE
+violate
+visit
+vomit
+vote : AVGT
+vouche
+vow
+wail
+wait
+wake
+waken
+walk
+wander
+want : EVT
+warm
+warn
+wash
+waste
+watch
+water
+wave
+wax
+weaken
+wear wears wore worn wearing
+weary wearies wearied wearied wearying : AVE
+weave
+weep weeps wept wept weeping
+weigh
+welcome
+whisper
+wield
+win wins won won winning
+wink
+winnow
+wipe
+wire : AVGT
+wish : EVT
+withdraw withdraws withdrew withdrawn withdrawing
+wither
+withhold withholds withheld withheld withholding
+withstand withstands withstood withstood withstanding
+witness
+wonder
+work
+worry worries worried worried worrying : AVE
+worship : EVT
+wound : AVE
+wreck
+wrest
+write writes wrote written writing
+yearn : EVT
+yield : AVGT
+
+>>Adjectives
+aback
+abaft
+abandoned
+abashed
+aberrant
+abhorrent
+abject
+ablaze
+able
+abnormal
+aboard
+aboriginal
+abortive
+abrasive
+abroad
+abrupt
+abruptly
+absent
+absolute
+absolutely
+absorbed
+abstract
+abstracted
+absurd
+abundant
+abusive
+academic
+acceptable
+accessible
+accidental
+accordingly
+accounting
+accurate
+accurately
+accused
+acid
+acoustic
+acrid
+active
+actively
+actual
+acute
+adamant
+adaptable
+added
+addicted
+additional
+adequate
+adequately
+adhesive
+adjacent
+adjoining
+administrative
+adorable
+adult
+advanced
+adventurous
+adverse
+advisory
+aesthetic
+afraid
+again
+aggregate
+aggressive
+agreeable
+agreed
+agricultural
+ahead
+alcoholic
+alert
+alien
+alike
+alive
+alleged
+allegedly
+allied
+alluring
+alone
+aloof
+aloud
+already
+alright
+also
+alternative
+alternatively
+altogether
+amateur
+amazing
+ambiguous
+ambitious
+ample
+amuck
+amused
+ancient
+angrily
+angry
+animated
+annoyed
+annual
+anonymous
+anxious
+anyway
+anywhere
+apathetic
+appalling
+apparent
+apparently
+applicable
+applied
+appointed
+appropriate
+appropriately
+approved
+approximately
+aquatic
+arbitrary
+archaeological
+architectural
+armed
+aromatic
+arrogant
+artificial
+artistic
+ashamed
+asleep
+aspiring
+assistant
+associated
+assorted
+astonishing
+atomic
+attempted
+attractive
+auspicious
+automatic
+automatically
+autonomous
+available
+average
+awake
+aware
+awful
+awkward
+axiomatic
+back
+backwards
+bad
+balanced
+barbarous
+bare
+barely
+bashful
+basic
+bawdy
+beautiful
+befitting
+belligerent
+beneficial
+bent
+berserk
+best
+better
+bewildered
+big
+billowy
+binding
+biological
+bitter
+bizarre
+black
+blank
+bleak
+blind
+blonde
+bloody
+blue
+blushing
+bodily
+bold
+boorish
+bored
+boring
+bottom
+boundless
+bourgeois
+brainy
+brash
+brave
+brawny
+breakable
+breezy
+brief
+bright
+brilliant
+broad
+broken
+brown
+bumpy
+bureaucratic
+burly
+burning
+busy
+cagey
+callous
+calm
+capable
+capital
+capricious
+careful
+casual
+causal
+cautious
+ceaseless
+central
+certain
+changeable
+changing
+characteristic
+charming
+cheap
+cheerful
+chemical
+chief
+childlike
+chilly
+chivalrous
+chosen
+chronic
+chubby
+chunky
+circular
+civic
+civil
+civilian
+clammy
+classic
+classical
+classy
+clean
+clear
+clerical
+clever
+clinical
+cloistered
+close
+closed
+cloudy
+clumsy
+co-operative
+coastal
+cognitive
+coherent
+cold
+collective
+colonial
+colorful
+colossal
+coloured
+colourful
+combative
+combined
+comfortable
+comfortably
+coming
+commercial
+common
+communication
+communist
+comparable
+comparative
+comparatively
+compatible
+competent
+competitive
+complementary
+complete
+completely
+complex
+complicated
+comprehensive
+compulsory
+conceptual
+concerned
+concrete
+condemned
+confident
+confidential
+confused
+conscious
+consequently
+conservative
+considerable
+considerably
+consistent
+consistently
+constant
+constantly
+constitutional
+constructive
+contemporary
+content
+continental
+continued
+continuing
+continuous
+continuously
+contractual
+contrary
+controlled
+controversial
+convenient
+conventional
+conversely
+convincing
+cooing
+cool
+cooperative
+corporate
+correct
+corresponding
+costly
+courageous
+course
+cowardly
+crabby
+craven
+crazy
+creative
+credible
+creepy
+criminal
+critical
+crooked
+crowded
+crucial
+crude
+cruel
+cuddly
+cultural
+cultured
+curious
+curly
+current
+currently
+curved
+cut
+cute
+cynical
+daffy
+damaged
+damaging
+damp
+dangerous
+dapper
+dark
+dead
+deadly
+deadpan
+deaf
+deafening
+dear
+debonair
+decent
+decisive
+decorative
+decorous
+deep
+defeated
+defective
+defensive
+defiant
+definite
+definitely
+deliberate
+delicate
+delicious
+delighted
+delightful
+democratic
+demonic
+dense
+departmental
+dependent
+depending
+depressed
+deranged
+deserted
+desirable
+desired
+desperate
+desperately
+detailed
+determined
+developed
+developing
+devilish
+devoted
+didactic
+different
+differential
+differently
+difficult
+digital
+diligent
+diplomatic
+direct
+directly
+direful
+dirty
+disabled
+disagreeable
+disastrous
+disciplinary
+discreet
+disgusted
+disillusioned
+dispensable
+distant
+distinct
+distinctive
+distinctly
+distinguished
+distributed
+disturbed
+divergent
+diverse
+divine
+dizzy
+domestic
+dominant
+domineering
+double
+doubtful
+doubtless
+downstairs
+drab
+draconian
+dramatic
+dramatically
+dreadful
+driving
+drunk
+dry
+dual
+due
+dull
+duly
+dusty
+dynamic
+dysfunctional
+eager
+earlier
+earliest
+early
+earsplitting
+earthy
+eastern
+easy
+eatable
+economic
+economically
+educated
+educational
+effective
+effectively
+efficacious
+efficient
+efficiently
+elaborate
+elastic
+elated
+elderly
+elected
+electoral
+electric
+electrical
+electronic
+elegant
+elfin
+eligible
+elite
+else
+elsewhere
+embarrassed
+embarrassing
+eminent
+emotional
+empirical
+empty
+encouraging
+endless
+endurable
+energetic
+enhanced
+enjoyable
+enormous
+enough
+enthusiastic
+entire
+entirely
+envious
+environmental
+equable
+equal
+equivalent
+erect
+erratic
+essential
+essentially
+established
+estimated
+eternal
+ethereal
+ethical
+ethnic
+evanescent
+evasive
+eventual
+everyday
+everywhere
+evident
+evidently
+evil
+evolutionary
+exact
+excellent
+exceptional
+exceptionally
+excess
+excessive
+excited
+exciting
+exclusive
+exclusively
+executive
+existing
+exotic
+expected
+expensive
+experienced
+experimental
+expert
+explicit
+explicitly
+express
+extended
+extensive
+extensively
+external
+extra
+extraordinary
+extreme
+exuberant
+exultant
+fabulous
+faded
+faint
+fair
+faithful
+fallacious
+false
+familiar
+famous
+fanatical
+fancy
+fantastic
+farther
+fascinated
+fascinating
+fashionable
+fat
+fatal
+faulty
+favourable
+favourite
+fearless
+feasible
+federal
+feeble
+feigned
+fellow
+female
+feminine
+fertile
+festive
+fierce
+filthy
+final
+finally
+financial
+financially
+fine
+finicky
+finished
+firm
+firmly
+first
+firstly
+fiscal
+fit
+fixed
+flagrant
+flaky
+flashy
+flat
+flawless
+flexible
+flippant
+flowery
+fluffy
+foamy
+fond
+foolish
+forceful
+foregoing
+foreign
+forever
+forgetful
+formal
+formally
+formerly
+formidable
+forth
+forthcoming
+fortunate
+forward
+forwards
+fragile
+frail
+frantic
+free
+frequent
+frequently
+fresh
+fretful
+friendly
+frightened
+front
+frozen
+fucking
+full
+full-time
+fun
+functional
+fundamental
+fundamentally
+funny
+furious
+further
+furthermore
+furtive
+future
+futuristic
+fuzzy
+gabby
+gainful
+gamy
+garrulous
+gastric
+gaudy
+gay
+general
+generous
+genetic
+gentle
+genuine
+genuinely
+geographical
+geological
+giant
+giddy
+gifted
+gigantic
+given
+glad
+glamorous
+gleaming
+glib
+global
+glorious
+glossy
+godly
+gold
+golden
+good
+goofy
+gorgeous
+gothic
+graceful
+gradual
+gradually
+grammatical
+grand
+grandiose
+grateful
+gratis
+grave
+gray
+greasy
+great
+greedy
+green
+grey
+grim
+groovy
+gross
+grotesque
+grouchy
+growing
+grubby
+gruesome
+grumpy
+guarded
+guiltless
+guilty
+gullible
+gusty
+guttural
+habitual
+halfway
+hallowed
+handicapped
+handsome
+handsomely
+handy
+hapless
+happy
+hard
+hardly
+harmful
+harmonious
+harsh
+head
+heady
+healthy
+heartbreaking
+heavenly
+heavy
+hellish
+helpful
+helpless
+hesitant
+hidden
+high
+highfalutin
+hilarious
+historic
+historical
+historically
+hitherto
+holistic
+hollow
+holy
+homeless
+homely
+homosexual
+honest
+honorable
+honourable
+hopefully
+horizontal
+horrible
+hospitable
+hostile
+hot
+however
+huge
+hulking
+human
+humble
+humdrum
+humorous
+hungry
+hurried
+hurt
+hushed
+husky
+hypnotic
+hysterical
+icky
+icy
+ideal
+ideally
+identical
+ideological
+idiotic
+ignorant
+ill
+illegal
+illustrious
+imaginary
+imaginative
+immediate
+immense
+imminent
+immune
+impartial
+imperfect
+imperial
+implicit
+important
+importantly
+imported
+impossible
+impressive
+improved
+inadequate
+inappropriate
+incandescent
+incapable
+incidentally
+inclined
+incompetent
+inconclusive
+increased
+increasing
+increasingly
+incredible
+incredibly
+indeed
+independent
+independently
+indigenous
+indirect
+indirectly
+individual
+individually
+indoor
+industrial
+industrious
+inevitable
+inevitably
+inexpensive
+infinite
+influential
+informal
+inherent
+initial
+initially
+injured
+inland
+innate
+inner
+innocent
+innovative
+inquisitive
+instant
+instead
+instinctive
+institutional
+instrumental
+insufficient
+intact
+integral
+integrated
+intellectual
+intelligent
+intense
+intensive
+intent
+interactive
+interested
+interesting
+interim
+interior
+intermediate
+internal
+international
+intimate
+invaluable
+invariably
+invincible
+invisible
+involved
+irate
+ironically
+irrelevant
+irrespective
+isolated
+itchy
+jaded
+jagged
+jazzy
+jealous
+jittery
+jobless
+joint
+jointly
+jolly
+joyous
+judicial
+judicious
+juicy
+jumbled
+jumpy
+junior
+just
+justified
+juvenile
+kaput
+keen
+key
+kind
+kindhearted
+knotty
+knowledgeable
+known
+labored
+labour
+lackadaisical
+lacking
+lamentable
+languid
+large
+larger
+largest
+large-scale
+largely
+last
+late
+lately
+later
+latin
+laughable
+lavish
+lay
+lazy
+leading
+lean
+learned
+least
+left
+legal
+legally
+legislative
+legitimate
+lengthy
+lesser
+lethal
+level
+lewd
+lexical
+liable
+liberal
+light
+likeable
+likewise
+limited
+linear
+linguistic
+liquid
+literally
+literary
+literate
+little
+live
+living
+local
+locally
+logical
+lone
+lonely
+long
+longer
+longest
+long-term
+loose
+lopsided
+lost
+loud
+loutish
+lovely
+low
+lower
+lowly
+loyal
+lucky
+ludicrous
+lush
+luxuriant
+luxury
+lying
+lyrical
+macabre
+macho
+mad
+magenta
+magic
+magical
+magnetic
+magnificent
+main
+mainly
+majestic
+major
+makeshift
+male
+malicious
+mammoth
+managerial
+managing
+mandatory
+maniacal
+manual
+manufacturing
+marginal
+marine
+marked
+married
+marvellous
+mass
+massive
+material
+materialistic
+mathematical
+mature
+maximum
+maybe
+mean
+meaningful
+meanwhile
+measly
+mechanical
+medical
+medieval
+medium
+meek
+melodic
+melted
+memorable
+mental
+mentally
+merciful
+mere
+merely
+metropolitan
+middle
+middle-class
+mighty
+mild
+military
+mindless
+miniature
+minimal
+minimum
+ministerial
+minor
+minute
+miscreant
+miserable
+misleading
+missing
+misty
+mixed
+mobile
+moderate
+modern
+modest
+moldy
+molecular
+momentous
+monetary
+moral
+moreover
+motionless
+moving
+muddled
+muddy
+multiple
+mundane
+municipal
+murky
+mushy
+musical
+must
+mute
+mutual
+mysterious
+naive
+naked
+namely
+nappy
+narrow
+nasty
+national
+nationally
+native
+natural
+naughty
+naval
+near
+nearby
+nearer
+neat
+nebulous
+necessarily
+necessary
+needless
+needy
+negative
+neighborly
+neighbouring
+nervous
+net
+neutral
+never before
+nevertheless
+new
+newly
+next
+nice
+nifty
+no
+noble
+noiseless
+noisy
+nominal
+nonchalant
+nondescript
+nonetheless
+nonstop
+normal
+normally
+northern
+nostalgic
+nosy
+notable
+notably
+noticeable
+notorious
+novel
+now
+nowadays
+nowhere
+noxious
+nuclear
+null
+numberless
+numerous
+nursing
+nutritious
+nutty
+oafish
+obedient
+obeisant
+objective
+obnoxious
+obscene
+obscure
+obsequious
+observant
+obsolete
+obtainable
+obvious
+obviously
+occasional
+occasionally
+occupational
+oceanic
+odd
+of course
+offbeat
+offensive
+official
+okay
+old
+old-fashioned
+omniscient
+once
+onerous
+onwards
+open
+operational
+opposed
+opposite
+optical
+optimal
+optimistic
+optional
+oral
+orange
+ordinary
+organic
+organisational
+organizational
+original
+originally
+orthodox
+ossified
+other
+otherwise
+outdoor
+outer
+outrageous
+outstanding
+oval
+overall
+overconfident
+overjoyed
+overnight
+overrated
+overseas
+overt
+overwhelming
+overwrought
+own
+paid
+painful
+painstaking
+pale
+panicky
+panoramic
+papal
+parallel
+parched
+parental
+parliamentary
+parsimonious
+part-time
+partial
+particular
+particularly
+partly
+passionate
+passive
+past
+pastoral
+pathetic
+patient
+payable
+peaceful
+peculiar
+penitent
+perceived
+perfect
+perhaps
+periodic
+permanent
+permanently
+permissible
+perpetual
+persistent
+personal
+personally
+petite
+petty
+philosophical
+phobic
+photographic
+physical
+picayune
+pink
+piquant
+placid
+plain
+planned
+plant
+plastic
+plausible
+pleasant
+please
+pleased
+plenty of
+plucky
+pointless
+poised
+polish
+polite
+political
+politically
+poor
+popular
+portable
+positive
+possessive
+possible
+possibly
+post-war
+potential
+powerful
+practical
+practically
+precious
+precise
+precisely
+predictable
+predominantly
+preferred
+pregnant
+preliminary
+premature
+premier
+premium
+present
+presently
+presidential
+presumably
+pretty
+previous
+previously
+prickly
+primarily
+primary
+prime
+primitive
+principal
+principally
+printed
+prior
+private
+privately
+privileged
+probable
+probably
+productive
+professional
+profitable
+profound
+profuse
+progressive
+prolonged
+prominent
+prone
+proper
+proportional
+proposed
+prospective
+protective
+proud
+provincial
+provisional
+psychedelic
+psychiatric
+psychological
+psychotic
+public
+publicly
+puffy
+pumped
+puny
+pure
+purely
+purple
+puzzled
+quack
+quaint
+qualified
+quantitative
+quarrelsome
+questionable
+quick
+quickest
+quiet
+quite
+quixotic
+quizzical
+rabid
+racial
+radical
+ragged
+rainy
+raised
+rambunctious
+rampant
+random
+rapid
+rare
+raspy
+rather
+rational
+ratty
+raw
+ready
+real
+realistic
+rear
+reasonable
+reasonably
+rebel
+recent
+recently
+receptive
+recondite
+red
+reduced
+redundant
+reflective
+regardless
+regional
+regular
+regulatory
+related
+relative
+relatively
+relevant
+reliable
+relieved
+religious
+reluctant
+remaining
+remarkable
+remarkably
+reminiscent
+remote
+renewed
+repeated
+reportedly
+representative
+repulsive
+required
+resident
+residential
+resolute
+resonant
+respectable
+respective
+respectively
+responsible
+restricted
+restrictive
+resulting
+retail
+retired
+revised
+revolutionary
+rhetorical
+rich
+ridiculous
+right
+righteous
+rightful
+rightly
+rigid
+ripe
+rising
+ritzy
+rival
+roasted
+robust
+romantic
+roomy
+rotten
+rough
+round
+royal
+rubber
+ruddy
+rude
+ruling
+running
+rural
+rustic
+ruthless
+sable
+sacred
+sad
+sadly
+safe
+salty
+same
+sassy
+satisfactory
+satisfied
+savoy
+scandalous
+scarce
+scared
+scary
+scattered
+scientific
+scintillating
+scrawny
+seasonal
+second
+secondary
+secondly
+secret
+secretive
+secular
+secure
+sedate
+seemly
+select
+selected
+selective
+selfish
+semantic
+senior
+sensible
+sensitive
+separate
+serious
+severe
+severely
+sexual
+sexually
+shaggy
+shaky
+shallow
+shared
+sharp
+sheer
+shiny
+shocked
+short
+shorter
+shortest
+short-term
+shortly
+shrill
+shut
+shy
+sick
+sideways
+significant
+significantly
+silent
+silky
+silly
+silver
+similar
+similarly
+simple
+simply
+simultaneously
+sincere
+sincerely
+single
+skilled
+skillful
+skinny
+sleeping
+sleepy
+slight
+slightly
+slim
+slimy
+slippery
+sloppy
+slow
+small
+smaller
+smallest
+smart
+smelly
+smiling
+smoggy
+smooth
+sneaky
+snobbish
+snotty
+so-called
+social
+socialist
+socially
+sociological
+soft
+soggy
+solar
+sole
+solely
+solid
+somber
+somehow
+somewhat
+somewhere
+sooner
+sophisticated
+sordid
+sore
+sorry
+sound
+sour
+southern
+spare
+spatial
+special
+specialist
+specially
+specific
+specifically
+specified
+spectacular
+spicy
+spiffy
+spiritual
+splendid
+spoken
+spontaneous
+spooky
+spotless
+spurious
+squalid
+square
+squeamish
+stable
+stale
+standard
+static
+statistical
+statuesque
+statutory
+steadfast
+steadily
+steady
+steep
+stereotyped
+sterling
+sticky
+stiff
+still
+stingy
+stolen
+stormy
+straight
+straightforward
+strange
+strangely
+strategic
+strict
+striking
+strong
+strongly
+structural
+stunning
+stupid
+subdued
+subject
+subjective
+subsequent
+subsequently
+substantial
+substantially
+substantive
+subtle
+successful
+successive
+succinct
+sudden
+sufficient
+sufficiently
+suitable
+sulky
+sunny
+super
+superb
+superior
+supplementary
+supporting
+supposed
+supreme
+sure
+surely
+surplus
+surprised
+surprising
+surrounding
+suspicious
+swanky
+sweet
+swift
+symbolic
+sympathetic
+symptomatic
+synonymous
+syntactic
+systematic
+taboo
+tacit
+tacky
+talented
+tall
+tame
+tan
+tangible
+tangy
+tart
+tasteful
+tasteless
+tasty
+tawdry
+tearful
+technical
+technically
+technological
+teenage
+teeny
+temporarily
+temporary
+tender
+tense
+tenuous
+terminal
+terrible
+territorial
+tested
+testy
+thankful
+theoretical
+therapeutic
+thereafter
+thereby
+thick
+thin
+thinkable
+thinking
+thirsty
+thorough
+thoughtful
+thoughtless
+thus
+tight
+tightfisted
+tiny
+tired
+tiresome
+together
+tonight
+toothsome
+top
+torpid
+total
+totally
+tough
+toxic
+trading
+traditional
+traditionally
+tragic
+trained
+tranquil
+trashy
+tremendous
+tricky
+trite
+trivial
+tropical
+troubled
+truculent
+true
+twice
+typical
+typically
+ubiquitous
+ugliest
+ugly
+ultimate
+ultra
+unable
+unacceptable
+unaccountable
+unadvised
+unarmed
+unaware
+unbecoming
+unbiased
+uncertain
+unchanged
+unclear
+uncomfortable
+unconscious
+uncovered
+underground
+underlying
+understandable
+understood
+undesirable
+undoubtedly
+uneasy
+unemployed
+unequaled
+uneven
+unexpected
+unfair
+unfamiliar
+unfortunate
+unhappy
+uniform
+uninterested
+unique
+united
+universal
+unknown
+unlawful
+unlikely
+unnecessary
+unpleasant
+unprecedented
+unreasonable
+unsightly
+unsuccessful
+unsuitable
+unusual
+unusually
+unwanted
+unwilling
+up-to-date
+upper
+uppity
+upset
+upstairs
+uptight
+upwards
+urban
+urgent
+used
+useful
+useless
+usual
+utopian
+utter
+uttermost
+vacant
+vacuous
+vagabond
+vague
+valid
+valuable
+variable
+varied
+various
+varying
+vast
+vengeful
+venomous
+verbal
+verdant
+versed
+vertical
+viable
+vicious
+victorious
+video-taped
+vigorous
+violent
+virtual
+visible
+visual
+vital
+vivacious
+vivid
+vocational
+voiceless
+volatile
+voluntary
+voracious
+vulgar
+vulnerable
+wacky
+waggish
+waiting
+wakeful
+walking
+warlike
+warm
+wary
+waste
+wasteful
+watchful
+watery
+weak
+wealthy
+weary
+wee
+weekly
+weird
+welcome
+well-known
+western
+wet
+whereby
+wherever
+whimsical
+white
+whole
+wholesale
+wicked
+wide
+widely
+widespread
+wild
+willing
+winning
+wiry
+wise
+wistful
+witty
+woebegone
+womanly
+wonderful
+wooden
+woozy
+workable
+working
+working-class
+worldwide
+worried
+worrying
+worse
+worst
+worthless
+worthwhile
+worthy
+wrathful
+wretched
+written
+wrong
+wry
+yellow
+yet
+young
+youthful
+yummy
+zany
+zealous
+zippy
+zonked
+
+>>Adverbs
+abnormally
+absentmindedly
+accidentally
+actually
+adventurously
+afterwards
+almost
+always
+annually
+anxiously
+arrogantly
+awkwardly
+badly
+bashfully
+basically
+beautifully
+bitterly
+bleakly
+blindly
+blissfully
+boastfully
+boldly
+bravely
+briefly
+brightly
+briskly
+broadly
+busily
+calmly
+carefully
+carelessly
+cautiously
+certainly
+cheerfully
+clearly
+cleverly
+closely
+coaxingly
+colorfully
+commonly
+continually
+coolly
+correctly
+courageously
+crossly
+cruelly
+curiously
+daily
+daintily
+dearly
+deceivingly
+deeply
+defiantly
+deliberately
+delightfully
+diligently
+dimly
+doubtfully
+dreamily
+easily
+elegantly
+energetically
+enormously
+enthusiastically
+equally
+especially
+even
+ever
+ever so
+evenly
+eventually
+exactly
+excitedly
+extremely
+fairly
+faithfully
+famously
+far
+fast
+fatally
+ferociously
+fervently
+fiercely
+fondly
+foolishly
+fortunately
+frankly
+frantically
+freely
+frenetically
+frightfully
+fully
+furiously
+generally
+generously
+gently
+gladly
+gleefully
+gracefully
+gratefully
+greatly
+greedily
+half
+happily
+hastily
+healthily
+heavily
+helpfully
+helplessly
+highly
+honestly
+hopelessly
+hourly
+hungrily
+immediately
+innocently
+inquisitively
+instantly
+intensely
+intently
+interestingly
+inwardly
+irritably
+jaggedly
+jealously
+jovially
+joyfully
+joyously
+jubilantly
+judgmentally
+justly
+keenly
+kiddingly
+kindheartedly
+kindly
+knavishly
+knowingly
+knowledgeably
+kookily
+lazily
+les
+lightly
+likely
+limply
+lively
+loftily
+longingly
+loosely
+loudly
+lovingly
+loyally
+madly
+majestically
+meaningfully
+mechanically
+merrily
+miserably
+mockingly
+monthly
+more
+mortally
+mostly
+mysteriously
+naturally
+hopelessly
+hourly
+hungrily
+immediately
+innocently
+inquisitively
+instantly
+intensely
+intently
+interestingly
+inwardly
+irritably
+jaggedly
+jealously
+jovially
+joyfully
+joyously
+jubilantly
+judgmentally
+justly
+keenly
+kiddingly
+kindheartedly
+kindly
+knavishly
+knowingly
+knowledgeably
+kookily
+lazily
+less
+lightly
+likely
+limply
+lively
+loftily
+longingly
+loosely
+loudly
+lovingly
+loyally
+madly
+majestically
+meaningfully
+mechanically
+merrily
+miserably
+mockingly
+monthly
+more
+mortally
+mostly
+mysteriously
+naturally
+nearly
+neatly
+nervously
+never
+nicely
+noisily
+not
+obediently
+obnoxiously
+oddly
+offensively
+officially
+often
+only
+openly
+optimistically
+overconfidently
+painfully
+partially
+patiently
+perfectly
+physically
+playfully
+politely
+poorly
+positively
+potentially
+powerfully
+promptly
+properly
+punctually
+quaintly
+queasily
+queerly
+questionably
+quicker
+quickly
+quietly
+quirkily
+quizzically
+randomly
+rapidly
+rarely
+readily
+really
+reassuringly
+recklessly
+regularly
+reluctantly
+repeatedly
+reproachfully
+restfully
+righteously
+rightfully
+rigidly
+roughly
+rudely
+safely
+scarcely
+scarily
+searchingly
+sedately
+seemingly
+seldom
+selfishly
+separately
+seriously
+shakily
+sharply
+sheepishly
+shrilly
+shyly
+silently
+sleepily
+slowly
+smoothly
+softly
+solemnly
+solidly
+sometimes
+soon
+speedily
+stealthily
+sternly
+strictly
+successfully
+suddenly
+supposedly
+surprisingly
+suspiciously
+sweetly
+swiftly
+sympathetically
+tenderly
+tensely
+terribly
+thankfully
+thoroughly
+thoughtfully
+tightly
+tomorrow
+too
+tremendously
+triumphantly
+truly
+truthfully
+rightfully
+scarcely
+searchingly
+sedately
+seemingly
+selfishly
+separately
+seriously
+sheepishly
+smoothly
+solemnly
+sometimes
+speedily
+stealthily
+successfully
+suddenly
+supposedly
+surprisingly
+suspiciously
+sympathetically
+tenderly
+thankfully
+thoroughly
+thoughtfully
+tomorrow
+tremendously
+triumphantly
+truthfully
+ultimately
+unabashedly
+unaccountably
+unbearably
+unethically
+unexpectedly
+unfortunately
+unimpressively
+unnaturally
+unnecessarily
+upbeat
+upright
+upside-down
+upward
+urgently
+usefully
+uselessly
+usually
+utterly
+vacantly
+vaguely
+vainly
+valiantly
+vastly
+verbally
+very
+viciously
+victoriously
+violently
+virtually
+vivaciously
+voluntarily
+warmly
+weakly
+wearily
+well
+wetly
+wholly
+wildly
+willfully
+wisely
+woefully
+wonderfully
+worriedly
+wrongly
+yawningly
+yearly
+yearningly
+yesterday
+yieldingly
+youthfully
+zealously
+zestfully
+
+>>ClauseModifiers
+// These are adverbs that can appear at the head of verb phrases
+// ("Sometimes they play chess")
+also
+always
+often
+however
+usually
+sometimes
+together
+generally
+instead
+actually
+again
+probably
+already
+therefore
+else
+thus
+eventually
+normally
+currently
+finally
+soon
+immediately
+primarily
+ultimately
+recently
+mostly
+naturally
+occasionally
+clearly
+essentially
+possibly
+personally
+rarely
+similarly
+basically
+effectively
+initially
+literally
+mainly
+hopefully
+originally
+significantly
+once
+twice
+everywhere
+elsewhere
+suddenly
+truly
+anyway
+unfortunately
+briefly
+moreover
+previously
+first
+tonight
+today
+later
+yet
+please
+maybe
+otherwise
+somehow
+tomorrow
+yesterday
+since
+no
+yes
+
+>>Nouns
+abbey
+ability
+abolition
+abortion
+absence
+absorption
+abuse
+academic
+academy
+accent
+acceptance
+access
+accident
+accommodation
+accord
+accordance
+account
+accountability
+accountant
+accumulation
+accuracy
+accusation
+achievement
+acid
+acquaintance
+acquisition
+acre
+act
+action
+activist
+activity
+actor
+actress
+adaptation
+addition
+address
+adjective
+adjustment
+administration
+administrator
+admiration
+admission
+adoption
+adult
+advance
+advantage
+adventure
+advertisement
+advertising
+advice
+adviser
+advocate
+affair
+affection
+affinity
+afternoon
+age
+agency
+agenda
+agent
+aggression
+agony
+agreement
+agriculture
+aid
+aids
+aim
+air
+aircraft
+airline
+airport
+alarm
+album
+alcohol
+allegation
+alliance
+allocation
+allowance
+ally
+altar
+alteration
+alternative
+aluminium
+amateur
+ambassador
+ambiguity
+ambition
+ambulance
+amendment
+amount
+amp
+amusement
+analogy
+analysis
+analyst
+ancestor
+angel
+anger
+angle
+animal
+ankle
+anniversary
+announcement
+answer
+ant
+antibody
+anticipation
+anxiety
+apartment
+apology
+apparatus
+appeal
+appearance
+appendix
+appetite
+apple
+applicant
+application
+appointment
+appraisal
+appreciation
+approach
+approval
+aquarium
+arc
+arch
+archbishop
+architect
+architecture
+archive
+area
+arena
+argument
+arm
+armchair
+army
+arrangement
+array
+arrest
+arrival
+arrow
+art
+article
+artist
+ash
+aspect
+aspiration
+assault
+assembly
+assertion
+assessment
+asset
+assignment
+assistance
+assistant
+associate
+association
+assumption
+assurance
+asylum
+athlete
+atmosphere
+atom
+attachment
+attack
+attacker
+attainment
+attempt
+attendance
+attention
+attitude
+attraction
+attribute
+auction
+audience
+audit
+auditor
+aunt
+author
+authority
+autonomy
+autumn
+availability
+avenue
+average
+aviation
+award
+awareness
+axis
+baby
+back
+background
+backing
+bacon
+bacteria
+bag
+bail
+balance
+balcony
+ball
+ballet
+balloon
+ballot
+ban
+banana
+band
+bang
+bank
+banker
+banking
+bankruptcy
+banner
+bar
+bargain
+barn
+barrel
+barrier
+base
+basement
+basin
+basis
+basket
+bass
+bastard
+bat
+batch
+bath
+bathroom
+battery
+battle
+bay
+beach
+beam
+bean
+bear
+beard
+bearing
+beast
+beat
+beauty
+bed
+bedroom
+bee
+beef
+beer
+beginning
+behalf
+behaviour
+being
+belief
+bell
+belly
+belt
+bench
+bend
+beneficiary
+benefit
+bet
+bias
+bible
+bicycle
+bid
+bike
+bile
+bill
+bin
+biography
+biology
+bird
+birth
+birthday
+biscuit
+bishop
+bit
+bitch
+bite
+black
+blade
+blame
+blanket
+blast
+blessing
+block
+bloke
+blood
+blow
+blue
+board
+boat
+body
+boiler
+bolt
+bomb
+bomber
+bond
+bone
+bonus
+book
+booking
+booklet
+boom
+boost
+boot
+border
+borough
+boss
+bottle
+bottom
+boundary
+bow
+bowel
+bowl
+bowler
+box
+boxing
+boy
+boyfriend
+bracket
+brain
+brake
+branch
+brand
+brandy
+brass
+breach
+bread
+break
+breakdown
+breakfast
+breast
+breath
+breed
+breeding
+breeze
+brewery
+brick
+bride
+bridge
+brigade
+broadcast
+brochure
+broker
+bronze
+brother
+brow
+brush
+bubble
+bucket
+budget
+builder
+building
+bulb
+bulk
+bull
+bullet
+bulletin
+bunch
+bundle
+burden
+bureau
+bureaucracy
+burial
+burn
+burst
+bus
+bush
+business
+businessman
+butter
+butterfly
+button
+buyer
+cab
+cabin
+cabinet
+cable
+cafe
+cage
+cake
+calcium
+calculation
+calendar
+calf
+call
+calm
+calorie
+camera
+camp
+campaign
+can
+canal
+cancer
+candidate
+candle
+canvas
+cap
+capability
+capacity
+capital
+capitalism
+capitalist
+captain
+car
+caravan
+carbon
+card
+care
+career
+carer
+cargo
+carpet
+carriage
+carrier
+carrot
+cart
+case
+cash
+cassette
+cast
+castle
+casualty
+cat
+catalogue
+catch
+category
+cathedral
+cattle
+cause
+caution
+cave
+ceiling
+celebration
+cell
+cellar
+cemetery
+census
+centre
+century
+cereal
+ceremony
+certainty
+certificate
+chain
+chair
+chairman
+chalk
+challenge
+chamber
+champagne
+champion
+championship
+chance
+chancellor
+change
+channel
+chaos
+chap
+chapel
+chapter
+character
+characteristic
+charge
+charity
+charm
+chart
+charter
+chase
+chat
+check
+cheek
+cheese
+chemical
+chemist
+chemistry
+cheque
+chest
+chicken
+chief
+child
+childhood
+chimney
+chin
+chip
+chocolate
+choice
+choir
+chord
+chorus
+church
+cigarette
+cinema
+circle
+circuit
+circular
+circulation
+circumstance
+citizen
+citizenship
+city
+civilian
+civilization
+claim
+clarity
+clash
+class
+classic
+classification
+classroom
+clause
+clay
+cleaner
+clearance
+clearing
+clergy
+clerk
+client
+cliff
+climate
+climb
+climber
+clinic
+clock
+closure
+cloth
+clothes
+clothing
+cloud
+club
+clue
+cluster
+co-operation
+coach
+coal
+coalition
+coast
+coat
+code
+coffee
+coffin
+coin
+coincidence
+collaboration
+collapse
+collar
+colleague
+collection
+collector
+college
+colon
+colonel
+colony
+colour
+column
+combination
+comedy
+comfort
+command
+commander
+comment
+commentary
+commentator
+commerce
+commission
+commissioner
+commitment
+committee
+commodity
+commons
+commonwealth
+communication
+communism
+communist
+community
+compact
+companion
+company
+comparison
+compartment
+compensation
+competence
+competition
+competitor
+complaint
+completion
+complex
+complexity
+compliance
+complication
+component
+composer
+composition
+compound
+compromise
+computer
+computing
+concentration
+concept
+conception
+concern
+concert
+concession
+conclusion
+concrete
+condition
+conduct
+conductor
+conference
+confession
+confidence
+configuration
+confirmation
+conflict
+confrontation
+confusion
+congregation
+congress
+conjunction
+connection
+conscience
+consciousness
+consensus
+consent
+consequence
+conservation
+conservative
+consideration
+consistency
+consortium
+conspiracy
+constable
+constituency
+constituent
+constitution
+constraint
+construction
+consultant
+consultation
+consumer
+consumption
+contact
+container
+contemporary
+contempt
+content
+contest
+context
+continent
+continuation
+continuity
+contract
+contraction
+contractor
+contradiction
+contrary
+contrast
+contribution
+control
+controller
+controversy
+convenience
+convention
+conversation
+conversion
+conviction
+cook
+cooking
+cooperation
+copper
+copy
+copyright
+cord
+core
+corn
+corner
+corps
+corpse
+correction
+correlation
+correspondence
+correspondent
+corridor
+corruption
+cost
+costume
+cottage
+cotton
+council
+councillor
+counsel
+counselling
+counsellor
+count
+counter
+counterpart
+country
+countryside
+county
+coup
+couple
+courage
+course
+court
+courtesy
+courtyard
+cousin
+covenant
+cover
+coverage
+cow
+crack
+craft
+craftsman
+crash
+cream
+creation
+creature
+credibility
+credit
+creditor
+creed
+crew
+cricket
+crime
+criminal
+crisis
+criterion
+critic
+criticism
+critique
+crop
+cross
+crossing
+crowd
+crown
+cruelty
+cry
+crystal
+cult
+culture
+cup
+cupboard
+cure
+curiosity
+curl
+currency
+current
+curriculum
+curtain
+curve
+cushion
+custody
+custom
+customer
+cut
+cutting
+cycle
+cylinder
+dairy
+damage
+dance
+dancer
+dancing
+danger
+dark
+darkness
+darling
+data
+database
+date
+daughter
+dawn
+day
+daylight
+deadline
+deal
+dealer
+dealing
+dear
+death
+debate
+debt
+debtor
+debut
+decade
+decay
+decision
+decision-making
+deck
+declaration
+decline
+decoration
+decrease
+decree
+deed
+deer
+default
+defeat
+defect
+defence
+defendant
+defender
+deficiency
+deficit
+definition
+degree
+delay
+delegate
+delegation
+delight
+delivery
+demand
+democracy
+democrat
+demonstration
+demonstrator
+denial
+density
+dentist
+department
+departure
+dependence
+dependency
+deposit
+depot
+depression
+deprivation
+depth
+deputy
+descent
+description
+desert
+design
+designer
+desire
+desk
+desktop
+despair
+destination
+destiny
+destruction
+detail
+detection
+detective
+detector
+detention
+determination
+developer
+development
+deviation
+device
+devil
+diagnosis
+diagram
+dialogue
+diameter
+diamond
+diary
+dictionary
+diet
+difference
+differentiation
+difficulty
+dignity
+dilemma
+dimension
+dining
+dinner
+dioxide
+diplomat
+direction
+directive
+director
+directory
+dirt
+disability
+disadvantage
+disagreement
+disappointment
+disaster
+disc
+discharge
+discipline
+disclosure
+disco
+discount
+discourse
+discovery
+discretion
+discrimination
+discussion
+disease
+dish
+disk
+dismissal
+disorder
+display
+disposal
+disposition
+dispute
+disruption
+distance
+distinction
+distortion
+distress
+distribution
+distributor
+district
+disturbance
+diversity
+dividend
+division
+divorce
+dock
+doctor
+doctrine
+document
+documentation
+dog
+doing
+doll
+dollar
+dolphin
+domain
+dome
+dominance
+domination
+donation
+donor
+door
+doorway
+dose
+dot
+double
+doubt
+dozen
+draft
+dragon
+drain
+drainage
+drama
+draw
+drawer
+drawing
+dream
+dress
+dressing
+drift
+drill
+drink
+drive
+driver
+drop
+drug
+drum
+duck
+duke
+duration
+dust
+duty
+dwelling
+eagle
+ear
+earl
+earning
+earth
+ease
+east
+echo
+economics
+economist
+economy
+edge
+edition
+editor
+education
+effect
+effectiveness
+efficiency
+effort
+egg
+ego
+elbow
+elder
+election
+electorate
+electricity
+electron
+electronics
+element
+elephant
+elite
+embarrassment
+embassy
+embryo
+emergence
+emergency
+emission
+emotion
+emperor
+emphasis
+empire
+employee
+employer
+employment
+encounter
+encouragement
+end
+ending
+enemy
+energy
+enforcement
+engagement
+engine
+engineer
+engineering
+enjoyment
+enquiry
+enterprise
+entertainment
+enthusiasm
+enthusiast
+entitlement
+entity
+entrance
+entry
+envelope
+environment
+enzyme
+episode
+equality
+equation
+equilibrium
+equipment
+equity
+equivalent
+era
+erosion
+error
+eruption
+escape
+essay
+essence
+establishment
+estate
+estimate
+ethics
+evaluation
+evening
+event
+evidence
+evil
+evolution
+exam
+examination
+example
+excavation
+exception
+excess
+exchange
+excitement
+exclusion
+excuse
+execution
+executive
+exemption
+exercise
+exhibition
+exile
+existence
+exit
+expansion
+expectation
+expedition
+expenditure
+expense
+experience
+experiment
+expert
+expertise
+explanation
+exploitation
+exploration
+explosion
+export
+exposure
+expression
+extension
+extent
+extract
+extreme
+eye
+eyebrow
+fabric
+facade
+face
+facility
+fact
+faction
+factor
+factory
+faculty
+failure
+fair
+fairy
+faith
+fall
+fame
+family
+fan
+fantasy
+fare
+farm
+farmer
+farming
+fashion
+fat
+fate
+father
+fault
+favour
+favourite
+fax
+fear
+feast
+feather
+feature
+federation
+fee
+feed
+feedback
+feel
+feeling
+fellow
+female
+feminist
+fence
+ferry
+fertility
+festival
+fever
+fiber
+fibre
+fiction
+field
+fig
+fight
+fighter
+figure
+file
+film
+filter
+final
+finance
+finding
+fine
+finger
+finish
+fire
+firm
+fish
+fisherman
+fishing
+fist
+fit
+fitness
+fitting
+fixture
+flag
+flame
+flash
+flat
+flavour
+fleet
+flesh
+flexibility
+flight
+flock
+flood
+floor
+flour
+flow
+flower
+fluctuation
+fluid
+fly
+focus
+fog
+fold
+folk
+follower
+food
+fool
+foot
+football
+footstep
+force
+forecast
+forehead
+foreigner
+forest
+forestry
+fork
+form
+format
+formation
+formula
+formulation
+fortnight
+fortune
+forum
+fossil
+foundation
+founder
+fountain
+fox
+fraction
+fragment
+frame
+framework
+franchise
+fraud
+freedom
+freight
+frequency
+fridge
+friend
+friendship
+fringe
+frog
+front
+frontier
+fruit
+frustration
+fuel
+fun
+function
+fund
+funding
+funeral
+fur
+furniture
+fury
+fusion
+fuss
+future
+gain
+galaxy
+gall
+gallery
+gallon
+game
+gang
+gap
+garage
+garden
+gardener
+garlic
+garment
+gas
+gate
+gathering
+gaze
+gear
+gender
+gene
+general
+generation
+genius
+gentleman
+geography
+gesture
+ghost
+giant
+gift
+gig
+girl
+girlfriend
+glance
+glass
+glimpse
+gloom
+glory
+glove
+glow
+go
+goal
+goalkeeper
+goat
+god
+gold
+golf
+good
+goodness
+gospel
+gossip
+government
+governor
+gown
+grace
+grade
+graduate
+grain
+grammar
+grandfather
+grandmother
+grant
+graph
+graphics
+grasp
+grass
+grave
+gravel
+gravity
+green
+greenhouse
+greeting
+grid
+grief
+grin
+grip
+ground
+group
+grouping
+growth
+guarantee
+guard
+guardian
+guerrilla
+guess
+guest
+guidance
+guide
+guideline
+guild
+guilt
+guitar
+gun
+gut
+guy
+habit
+habitat
+hair
+hall
+halt
+ham
+hammer
+hand
+handful
+handicap
+handle
+handling
+happiness
+harbour
+hardship
+hardware
+harm
+harmony
+harvest
+hat
+hatred
+hay
+hazard
+head
+heading
+headline
+headmaster
+headquarters
+health
+heap
+hearing
+heart
+heat
+heating
+heaven
+hectare
+hedge
+heel
+height
+heir
+helicopter
+hell
+helmet
+help
+hemisphere
+hen
+herb
+herd
+heritage
+hero
+heroin
+hierarchy
+highlight
+highway
+hill
+hint
+hip
+hire
+historian
+history
+hit
+hobby
+hold
+holder
+holding
+hole
+holiday
+holly
+home
+homework
+honey
+honour
+hook
+hope
+horizon
+horn
+horror
+horse
+hospital
+hospitality
+host
+hostage
+hostility
+hotel
+hour
+house
+household
+housewife
+housing
+human
+humanity
+humour
+hunger
+hunt
+hunter
+hunting
+hurry
+husband
+hut
+hydrogen
+hypothesis
+ice
+idea
+ideal
+identification
+identity
+ideology
+ignorance
+illness
+illusion
+illustration
+image
+imagination
+immigrant
+immigration
+impact
+implementation
+implication
+import
+importance
+impression
+imprisonment
+improvement
+impulse
+inability
+incentive
+inch
+incidence
+incident
+inclusion
+income
+increase
+independence
+index
+indication
+indicator
+individual
+industry
+inequality
+infant
+infection
+inflation
+influence
+information
+infrastructure
+ingredient
+inhabitant
+inheritance
+inhibition
+initial
+initiative
+injection
+injunction
+injury
+inn
+innocence
+innovation
+input
+inquest
+inquiry
+insect
+inside
+insider
+insight
+insistence
+inspection
+inspector
+inspiration
+installation
+instance
+instant
+instinct
+institute
+institution
+instruction
+instructor
+instrument
+insurance
+intake
+integration
+integrity
+intellectual
+intelligence
+intensity
+intent
+intention
+interaction
+intercourse
+interest
+interface
+interference
+interior
+interpretation
+interval
+intervention
+interview
+introduction
+invasion
+invention
+investigation
+investigator
+investment
+investor
+invitation
+involvement
+ion
+iron
+irony
+island
+isolation
+issue
+item
+ivory
+jacket
+jail
+jam
+jar
+jaw
+jazz
+jeans
+jet
+jew
+jewel
+jewellery
+job
+jockey
+joint
+joke
+journal
+journalist
+journey
+joy
+judge
+judgement
+judgment
+juice
+jump
+junction
+jungle
+jurisdiction
+jury
+justice
+justification
+keeper
+kettle
+key
+keyboard
+kick
+kid
+kidney
+killer
+killing
+kilometre
+kind
+king
+kingdom
+kiss
+kit
+kitchen
+kite
+knee
+knife
+knight
+knitting
+knock
+knot
+knowledge
+lab
+label
+laboratory
+labour
+labourer
+lace
+lack
+lad
+ladder
+lady
+lake
+lamb
+lamp
+land
+landing
+landlord
+landowner
+landscape
+lane
+language
+lap
+laser
+laugh
+laughter
+launch
+law
+lawn
+lawyer
+layer
+layout
+lead
+leader
+leadership
+leaf
+leaflet
+league
+learner
+learning
+lease
+leather
+leave
+lecture
+lecturer
+left
+leg
+legacy
+legend
+legislation
+legislature
+leisure
+lemon
+lender
+length
+lesson
+letter
+level
+liability
+liaison
+liberal
+liberation
+liberty
+librarian
+library
+licence
+lid
+lie
+life
+lifespan
+lifestyle
+lifetime
+lift
+light
+lighting
+like
+likelihood
+limb
+limestone
+limit
+limitation
+line
+linen
+link
+lion
+lip
+liquid
+list
+listener
+literacy
+literature
+litigation
+litre
+liver
+living
+load
+loan
+lobby
+local
+locality
+location
+lock
+locomotive
+log
+logic
+look
+loop
+lord
+lordship
+lorry
+loss
+lot
+lounge
+love
+lover
+loyalty
+luck
+lump
+lunch
+lunchtime
+lung
+luxury
+machine
+machinery
+magazine
+magic
+magistrate
+magnitude
+maid
+mail
+mainframe
+mainland
+mains
+mainstream
+maintenance
+majesty
+majority
+make
+make-up
+maker
+making
+male
+mammal
+man
+management
+manager
+manifestation
+manipulation
+mankind
+manner
+manor
+manpower
+manual
+manufacture
+manufacturer
+manufacturing
+manuscript
+map
+marathon
+marble
+march
+margin
+mark
+marker
+market
+marketing
+marriage
+marsh
+mask
+mass
+master
+match
+mate
+material
+mathematics
+matrix
+matter
+maturity
+maximum
+mayor
+meadow
+meal
+meaning
+means
+meantime
+measure
+measurement
+meat
+mechanism
+medal
+media
+medicine
+medium
+meeting
+member
+membership
+membrane
+memorandum
+memorial
+memory
+mention
+menu
+merchant
+mercy
+merger
+merit
+mess
+message
+metal
+metaphor
+method
+methodology
+metre
+microphone
+middle
+midfield
+midnight
+migration
+mile
+milk
+mill
+mind
+mine
+miner
+mineral
+minimum
+mining
+minister
+ministry
+minority
+minute
+miracle
+mirror
+misery
+missile
+mission
+mist
+mistake
+mistress
+mix
+mixture
+mobility
+mode
+model
+modification
+module
+mole
+molecule
+moment
+momentum
+monarch
+monarchy
+monastery
+money
+monitor
+monitoring
+monk
+monkey
+monopoly
+monster
+month
+monument
+mood
+moon
+moor
+moral
+morale
+morality
+morning
+mortality
+mortgage
+mosaic
+mother
+motif
+motion
+motivation
+motive
+motor
+motorist
+motorway
+mould
+mountain
+mouse
+mouth
+move
+movement
+movie
+mud
+mug
+multimedia
+murder
+murderer
+muscle
+museum
+mushroom
+music
+musician
+mutation
+mystery
+myth
+nail
+name
+narrative
+nation
+nationalism
+nationalist
+nationality
+native
+nature
+navy
+necessity
+neck
+need
+needle
+neglect
+negligence
+negotiation
+neighbour
+neighbourhood
+nephew
+nerve
+nest
+net
+network
+newcomer
+news
+newspaper
+night
+nightmare
+nitrogen
+node
+noise
+nomination
+nonsense
+norm
+north
+nose
+note
+notebook
+notice
+notion
+noun
+novel
+novelist
+nucleus
+nuisance
+number
+nun
+nurse
+nursery
+nursing
+nut
+oak
+object
+objection
+objective
+obligation
+observation
+observer
+obstacle
+occasion
+occupation
+occurrence
+ocean
+odd
+odour
+offence
+offender
+offer
+offering
+office
+officer
+official
+offspring
+oil
+omission
+onion
+opening
+opera
+operating
+operation
+operator
+opinion
+opponent
+opportunity
+opposite
+opposition
+optimism
+option
+orange
+orbit
+orchestra
+order
+organ
+organisation
+organiser
+organism
+organization
+orientation
+origin
+original
+other
+outbreak
+outcome
+outfit
+outlet
+outline
+outlook
+output
+outset
+outside
+outsider
+oven
+overall
+overview
+owl
+owner
+ownership
+oxygen
+ozone
+pace
+pack
+package
+packet
+pad
+page
+pain
+paint
+painter
+painting
+pair
+pal
+palace
+palm
+pan
+panel
+panic
+paper
+par
+parade
+paragraph
+parallel
+parameter
+parcel
+pardon
+parent
+parish
+park
+parking
+parliament
+part
+participant
+participation
+particle
+particular
+partner
+partnership
+party
+pass
+passage
+passenger
+passion
+passport
+past
+pasture
+patch
+patent
+path
+patience
+patient
+patrol
+patron
+pattern
+pause
+pavement
+pay
+payment
+peace
+peak
+peasant
+pedestrian
+peer
+pen
+penalty
+pencil
+penny
+pension
+pensioner
+people
+pepper
+percent
+percentage
+perception
+performance
+performer
+period
+permission
+person
+personality
+personnel
+perspective
+pest
+pet
+petition
+petrol
+phase
+phenomenon
+philosopher
+philosophy
+phone
+photo
+photograph
+photographer
+photography
+phrase
+physician
+physics
+piano
+picture
+pie
+piece
+pier
+pig
+pigeon
+pile
+pill
+pillar
+pillow
+pilot
+pin
+pine
+pint
+pioneer
+pipe
+pit
+pitch
+pity
+place
+placement
+plain
+plaintiff
+plan
+plane
+planet
+planner
+planning
+plant
+plasma
+plaster
+plastic
+plate
+platform
+play
+player
+plea
+pleasure
+plot
+pocket
+poem
+poet
+poetry
+point
+poison
+pole
+police
+policeman
+policy
+politician
+politics
+poll
+pollution
+polymer
+polytechnic
+pond
+pony
+pool
+pop
+pope
+popularity
+population
+port
+porter
+portfolio
+portion
+portrait
+position
+possession
+possibility
+post
+postcard
+poster
+pot
+potato
+potential
+pottery
+pound
+poverty
+powder
+power
+practice
+practitioner
+praise
+prayer
+precaution
+precedent
+precision
+predator
+predecessor
+prediction
+preference
+pregnancy
+prejudice
+premise
+premium
+preoccupation
+preparation
+prescription
+presence
+present
+presentation
+preservation
+presidency
+president
+press
+pressure
+prestige
+prevalence
+prevention
+prey
+price
+pride
+priest
+primary
+prince
+princess
+principal
+principle
+print
+printer
+printing
+priority
+prison
+prisoner
+privacy
+privatisation
+privatization
+privilege
+prize
+probability
+probe
+problem
+procedure
+proceed
+proceeding
+process
+processing
+procession
+processor
+produce
+producer
+product
+production
+productivity
+profession
+professional
+professor
+profile
+profit
+profitability
+program
+programme
+programming
+progress
+project
+projection
+promise
+promoter
+promotion
+proof
+propaganda
+property
+proportion
+proposal
+proposition
+proprietor
+prosecution
+prospect
+prosperity
+protection
+protein
+protest
+protocol
+provider
+province
+provision
+psychologist
+psychology
+pub
+public
+publication
+publicity
+publisher
+publishing
+pudding
+pulse
+pump
+punch
+punishment
+pupil
+purchase
+purchaser
+purpose
+pursuit
+push
+qualification
+quality
+quantity
+quantum
+quarry
+quarter
+queen
+query
+quest
+question
+questionnaire
+queue
+quid
+quota
+quotation
+rabbit
+race
+racism
+rack
+radiation
+radical
+radio
+rage
+raid
+rail
+railway
+rain
+rally
+ram
+range
+rank
+rape
+rat
+rate
+rating
+ratio
+ray
+reach
+reaction
+reactor
+reader
+reading
+realism
+reality
+realm
+rear
+reason
+reasoning
+rebel
+rebellion
+receipt
+receiver
+reception
+receptor
+recession
+recipe
+recipient
+recognition
+recommendation
+reconstruction
+record
+recorder
+recording
+recovery
+recreation
+recruit
+recruitment
+red
+reduction
+redundancy
+referee
+reference
+referendum
+referral
+reflection
+reform
+reformer
+refuge
+refugee
+refusal
+regard
+regime
+regiment
+region
+register
+registration
+regret
+regulation
+rehabilitation
+rehearsal
+reign
+rejection
+relate
+relation
+relationship
+relative
+relaxation
+release
+relevance
+reliance
+relief
+religion
+reluctance
+remain
+remainder
+remark
+remedy
+reminder
+removal
+renaissance
+renewal
+rent
+repair
+repayment
+repetition
+replacement
+reply
+report
+reporter
+representation
+representative
+reproduction
+republic
+republican
+reputation
+request
+requirement
+rescue
+research
+researcher
+resentment
+reservation
+reserve
+reservoir
+residence
+resident
+residue
+resignation
+resistance
+resolution
+resort
+resource
+respect
+respondent
+response
+responsibility
+rest
+restaurant
+restoration
+restraint
+restriction
+result
+retailer
+retention
+retirement
+retreat
+return
+revelation
+revenge
+revenue
+reverse
+review
+revision
+revival
+revolution
+reward
+rhetoric
+rhythm
+rib
+ribbon
+rice
+ride
+rider
+ridge
+rifle
+right
+ring
+riot
+rise
+risk
+ritual
+rival
+river
+road
+robbery
+rock
+rocket
+rod
+role
+roll
+romance
+roof
+room
+root
+rope
+rose
+rotation
+round
+route
+routine
+row
+royalty
+rubbish
+rug
+rugby
+ruin
+rule
+ruler
+ruling
+rumour
+run
+runner
+rush
+sack
+sacrifice
+safety
+sail
+sailor
+saint
+sake
+salad
+salary
+sale
+salmon
+salon
+salt
+salvation
+sample
+sanction
+sanctuary
+sand
+sandwich
+satellite
+satisfaction
+sauce
+sausage
+saving
+saying
+scale
+scandal
+scenario
+scene
+scent
+schedule
+scheme
+scholar
+scholarship
+school
+science
+scientist
+scope
+score
+scrap
+scream
+screen
+screening
+screw
+script
+scrutiny
+sculpture
+sea
+seal
+search
+season
+seat
+second
+secret
+secretary
+secretion
+section
+sector
+security
+sediment
+seed
+segment
+selection
+self
+seller
+semi-final
+seminar
+senate
+senior
+sensation
+sense
+sensitivity
+sentence
+sentiment
+separation
+sequence
+sergeant
+series
+serum
+servant
+server
+service
+session
+set
+setting
+settlement
+sex
+sexuality
+shade
+shadow
+shaft
+shame
+shape
+share
+shareholder
+shed
+sheep
+sheet
+shelf
+shell
+shelter
+shield
+shift
+shilling
+ship
+shirt
+shit
+shock
+shoe
+shop
+shopping
+shore
+short
+shortage
+shot
+shoulder
+shout
+show
+shower
+shrub
+sick
+sickness
+side
+siege
+sigh
+sight
+sign
+signal
+signature
+significance
+silence
+silk
+silver
+similarity
+simplicity
+sin
+singer
+single
+sink
+sir
+sister
+site
+situation
+size
+skeleton
+sketch
+ski
+skill
+skin
+skipper
+skirt
+skull
+sky
+slab
+slave
+sleep
+sleeve
+slice
+slide
+slip
+slogan
+slope
+slot
+smell
+smile
+smoke
+snake
+snow
+soap
+soccer
+socialism
+socialist
+society
+sociology
+sock
+socket
+sodium
+sofa
+software
+soil
+soldier
+solicitor
+solidarity
+solo
+solution
+solvent
+son
+song
+sort
+soul
+sound
+soup
+source
+south
+sovereignty
+space
+speaker
+specialist
+species
+specification
+specimen
+spectacle
+spectator
+spectrum
+speculation
+speech
+speed
+spell
+spelling
+spending
+sphere
+spider
+spine
+spirit
+spite
+split
+spokesman
+sponsor
+sponsorship
+spoon
+sport
+spot
+spouse
+spray
+spread
+spring
+spy
+squad
+squadron
+square
+stability
+stable
+stadium
+staff
+stage
+stair
+staircase
+stake
+stall
+stamp
+stance
+stand
+standard
+standing
+star
+start
+state
+statement
+station
+statistics
+statue
+status
+statute
+stay
+steam
+steel
+stem
+step
+steward
+stick
+stimulation
+stimulus
+stitch
+stock
+stocking
+stomach
+stone
+stool
+stop
+storage
+store
+storm
+story
+strain
+strand
+stranger
+strap
+strategy
+straw
+stream
+street
+strength
+stress
+stretch
+strike
+striker
+string
+strip
+stroke
+structure
+struggle
+student
+studio
+study
+stuff
+style
+subject
+submission
+subscription
+subsidiary
+subsidy
+substance
+substitute
+suburb
+success
+succession
+successor
+sufferer
+suffering
+sugar
+suggestion
+suicide
+suit
+suitcase
+suite
+sulphur
+sum
+summary
+summer
+summit
+sun
+sunlight
+sunshine
+superintendent
+supermarket
+supervision
+supervisor
+supper
+supplement
+supplier
+supply
+support
+supporter
+surface
+surgeon
+surgery
+surplus
+surprise
+surrounding
+survey
+surveyor
+survival
+survivor
+suspect
+suspension
+suspicion
+sweat
+sweet
+swimming
+swing
+switch
+sword
+syllable
+symbol
+symmetry
+sympathy
+symptom
+syndrome
+synthesis
+system
+t-shirt
+table
+tablet
+tactic
+tail
+takeover
+tale
+talent
+talk
+talking
+tank
+tap
+tape
+target
+tariff
+task
+taste
+tax
+taxation
+taxi
+taxpayer
+tea
+teacher
+teaching
+team
+tear
+technique
+technology
+teenager
+telecommunication
+telephone
+television
+telly
+temper
+temperature
+temple
+temptation
+tenant
+tendency
+tennis
+tension
+tent
+term
+terminal
+terms
+terrace
+territory
+terror
+terrorist
+test
+testament
+testing
+text
+textbook
+textile
+texture
+thanks
+theatre
+theft
+theme
+theology
+theorist
+theory
+therapist
+therapy
+thesis
+thief
+thigh
+thing
+thinking
+thought
+thread
+threat
+threshold
+throat
+throne
+thrust
+thumb
+ticket
+tide
+tie
+tiger
+tile
+timber
+time
+timetable
+timing
+tin
+tip
+tissue
+title
+toast
+tobacco
+today
+toe
+toilet
+toll
+tomato
+ton
+tone
+tongue
+tonne
+tool
+tooth
+top
+topic
+torch
+total
+touch
+tour
+tourism
+tourist
+tournament
+towel
+tower
+town
+toy
+trace
+track
+tract
+trade
+trader
+trading
+tradition
+traffic
+tragedy
+trail
+train
+trainee
+trainer
+training
+trait
+transaction
+transcription
+transfer
+transformation
+transition
+translation
+transmission
+transport
+trap
+travel
+traveller
+tray
+treasure
+treasurer
+treasury
+treat
+treatment
+treaty
+tree
+trench
+trend
+trial
+triangle
+tribe
+tribunal
+tribute
+trick
+trip
+triumph
+trolley
+troop
+trophy
+trouble
+trouser
+truck
+trunk
+trust
+trustee
+truth
+try
+tube
+tumour
+tune
+tunnel
+turkey
+turn
+turnover
+tutor
+twin
+twist
+type
+tyre
+ulcer
+umbrella
+uncertainty
+uncle
+understanding
+undertaking
+unemployment
+uniform
+union
+unionist
+unit
+unity
+universe
+university
+unrest
+upstairs
+urge
+urgency
+urine
+usage
+use
+user
+utility
+utterance
+vacuum
+validity
+valley
+valuation
+value
+valve
+van
+variable
+variant
+variation
+variety
+vat
+vector
+vegetable
+vegetation
+vehicle
+vein
+velocity
+velvet
+vendor
+venture
+venue
+verb
+verdict
+verse
+version
+vessel
+veteran
+vicar
+vice-president
+victim
+victory
+video
+view
+viewer
+viewpoint
+villa
+village
+villager
+violation
+violence
+virgin
+virtue
+virus
+vision
+visit
+visitor
+vitamin
+vocabulary
+voice
+voltage
+volume
+volunteer
+vote
+voter
+voucher
+voyage
+wage
+wagon
+waist
+waiter
+waiting
+wake
+walk
+walker
+wall
+want
+war
+ward
+wardrobe
+warehouse
+warmth
+warning
+warrant
+warranty
+warrior
+wartime
+wash
+washing
+waste
+watch
+water
+wave
+way
+weakness
+wealth
+weapon
+weather
+wedding
+weed
+week
+weekend
+weight
+welcome
+welfare
+well
+west
+whale
+wheat
+wheel
+whip
+whisky
+whisper
+white
+whole
+wicket
+widow
+width
+wife
+wildlife
+will
+willingness
+win
+wind
+window
+wine
+wing
+winner
+winter
+wire
+wisdom
+wish
+wit
+witch
+withdrawal
+witness
+wolf
+woman
+wonder
+wood
+woodland
+wool
+word
+wording
+work
+worker
+workforce
+working
+workplace
+works
+workshop
+workstation
+world
+worm
+worry
+worship
+worth
+wound
+wrist
+writer
+writing
+wrong
+x-ray
+yacht
+yard
+yarn
+year
+yesterday
+yield
+youngster
+youth
+zone
+
+>>Attribution
+// These are verbs which appear in attributions for quotes: "he SAID", etc.
+say
+state
+shout
+exclaim
+demand
+claim
+report
+ask
+note
+answer
+think
+
+
+>>PrepVerbs
+// This section specifies the association of preps and verbs.
+// The associations are weighted: "by : sit=4" means the prep "by"
+// is associated with the verb "sit", with weight 4. If no weight
+// is given, it defaults to the value "1".
+aboard : work
+about : think=26 talk=25 know=18 care=12 tell=11 worry=10 learn=9 +
+write=8 take=8 do=8 weigh=7 produce=7 question=5 hear=5 get=5 end=5 +
+concern=5 spend=4 say=4 bring=4 ask=4 still=3 start=3 read=3 need=3 +
+make=3 like=3 kill=3 hold=3 begin=3 wonder=2 thinking=2 leave=2 +
+last=2 hit=2 harvest=2 gather=2 feel=2 dream=2 cover=2 cost=2 argue=2 +
+welcome upset trouble swim states ship set seem rise respect remember +
+remark receive pump perform order offer move moan melt mark lose live +
+lay jump inform infect give found fly film fascinate expect develope +
+decrease cry control climb buy build become beat assemble
+after : name=11 go=6 look=5 see=3 say=3 meet=3 long=3 leave=3 come=3 +
+call=3 become=3 start=2 silence=2 free=2 end=2 begin=2 water turn +
+treat throw swim stretch stop run rise restore remain reach offer +
+make hit grind get fly flee feel dream dissolve disappear die destroy +
+cross chase arrest appear abandone
+against : fight=24 protest=9 press=4 compete=4 turn=3 strike=3 play=3 +
+win=2 take=2 rebel=2 attack=2 start speak run rub render read open +
+launch hear head guard grind feel enter end do divide defend crash +
+begin attempt
+ago : long
+along : bring=7 take=2 stretch=2 spill=2 place=2 look=2 lie=2 found=2 +
+wander walk travel trading slow ride point move jump head go fly +
+extend drive develope cheer blow attack
+alongside : work sit move fight
+among : trade=2 cause=2 use understand take stop sleep sit show mean +
+hunt grope go entangle divide develope
+apart : tell tear
+around : travel=9 move=7 fly=7 sail=6 build=5 put=4 run=3 go=3 walk=2 +
+sit=2 see=2 protect=2 place=2 make=2 get=2 create=2 worship wear +
+wander visit tie spring show send reduce reach rattle pump present +
+plant paw open observe look limit like light lie land include happen +
+hang grow gather form flow flood float find discover dig develope +
+destroy curve crash carry breath arise
+as : know=45 use=22 see=16 work=15 serve=13 say=6 begin=6 regard=5 +
+get=5 watch=4 treat=4 take=4 eat=4 become=4 show=3 run=3 live=3 +
+keep=3 interest=3 earn=3 do=3 cry=3 continue=3 come=3 choose=3 +
+build=3 add=3 act=3 write=2 water=2 turn=2 trouble=2 start=2 spend=2 +
+save=2 rule=2 rise=2 produce=2 pant=2 make=2 long=2 learn=2 hear=2 +
+give=2 gain=2 found=2 follow=2 find=2 fast=2 disguise=2 describe=2 +
+create=2 consider=2 catch=2 call=2 buy=2 award=2 win wear wave warm +
+unite try truck travel stone still stay startled shake set send sell +
+rush rub restrain respect repeat remember record recognize read +
+publish provoke plant plan place pay paint offer numb note marvel +
+lose look load leave kill influence hold happen grow founded forward +
+fly fancy explain exist escape employ dry drink disappear design +
+cover control content climb change chance celebrate cause carry bring +
+breath block believe bear arrive appear anger advance accept
+at : look=93 work=17 say=13 stay=11 surprise=9 sell=7 see=7 point=7 +
+play=7 begin=7 travel=6 take=6 sit=6 meet=6 laugh=6 get=6 do=6 live=5 +
+lie=5 grow=5 die=5 come=5 spend=4 put=4 marry=4 leave=4 face=4 +
+drink=4 catch=4 become=4 wave=3 throw=3 teach=3 start=3 shout=3 +
+shoot=3 run=3 reach=3 make=3 fire=3 find=3 feel=3 wonder=2 wear=2 +
+use=2 step=2 stand=2 sleep=2 show=2 rush=2 produce=2 place=2 pick=2 +
+pass=2 move=2 lift=2 knock=2 keep=2 hold=2 hiss=2 head=2 happen=2 +
+hand=2 glance=2 gather=2 frighten=2 forward=2 form=2 finish=2 +
+consider=2 close=2 attempt=2 arrive=2 write working weigh water watch +
+vex understand treat tower tease swim supply substitute study stop +
+state startle spread sound sink sign set serve sense seize scream rub +
+ride remember reduce rattle raise rain prove pray please plant plan +
+open offer mount melt measure mean lose listen like land know jump +
+join hunt hit hear guard gap free found fold fly floor flood flash +
+fill fight feed explore exclaim enjoy end employ draw dive direct dig +
+defeat cure crawling charge change celebrate bury burn build boil +
+beat attend attack attach ask arrest appear alarm aim
+away : take=8 carry=4 wave=2 throw=2 eat=2 wear turn scare pass melt +
+go give frighten fade drive draw burn
+behind : get=4 close=4 stand=3 walk states slam say remain put place +
+paint live leave hide hand fall drive
+besides : hit
+between : lie=5 put=4 create=4 move=3 border=3 weave=2 trade=2 tell=2 +
+sign=2 race=2 fight=2 come=2 witness wash travel trading terrorize +
+supervise study slide sit show read reach mean make long live link +
+keep get form flow face divide dispute develope decide compromise +
+close clean clash celebrate cause build break begin bear arise
+beyond : go=2 sit live discover
+by : make=19 cause=17 surround=13 create=12 use=11 build=11 rule=10 +
+lead=9 own=8 go=8 influence=7 hit=7 do=7 destroy=7 sit=6 produce=6 +
+write=5 run=5 protect=5 pass=5 kill=5 get=5 form=5 eat=5 travel=4 +
+support=4 stand=4 shock=4 rise=4 murder=4 increase=4 hurt=4 earn=4 +
+startle=3 separate=3 reach=3 play=3 guide=3 follow=3 elect=3 divide=3 +
+design=3 cover=3 close=3 choose=3 accept=3 terrorize=2 take=2 +
+suppress=2 strike=2 set=2 say=2 save=2 remove=2 puzzle=2 punish=2 +
+pollute=2 perform=2 paint=2 multiply=2 move=2 measure=2 mean=2 help=2 +
+harass=2 give=2 free=2 found=2 fly=2 flood=2 feed=2 execute=2 end=2 +
+defeat=2 cut=2 crush=2 control=2 change=2 capture=2 call=2 buy=2 +
+bite=2 begin=2 attend=2 work welcome water watch wash warm walk +
+violate trouble threaten surprise sting start spread shoot ship +
+settle sentence send sell seize see revile rest rescue remain relieve +
+reduce record read react pull prevent preserve point picture pay +
+oppress open nurse mesmerize mark lose leave leak lay know judge +
+irritate invent interrupt insult inspire inhabit infect improve +
+impress import identify hunt hold hear head harvest guarantee govern +
+frustrate frighten forget flee feel fascinate fall excite establish +
+entrance entertain embarrass drown distinguish disgust discover dig +
+deliver delight damage cure cross criticize crash confuse confound +
+communicate command chase celebrate broadcast bring break bomb block +
+bleed become bear bat attack arrest approve appoint amaze affect +
+admire absorb
+despite : reassure
+down : run=9 go=8 tear=5 cut=5 put=4 write=3 move=3 come=3 close=3 +
+burn=3 break=3 walk=2 turn=2 take=2 stay=2 slow=2 sit=2 shut=2 sail=2 +
+roll=2 flow=2 calm=2 travel throw think tears swallow slide shoot +
+send ride pass make lead knock kick hurry glide get force follow fly +
+fall drink bring bend begin
+for : look=41 use=35 fight=24 work=23 do=19 wait=18 search=17 last=13 +
+make=12 get=12 need=11 pay=10 care=10 call=10 take=9 play=9 live=9 +
+hunt=9 become=9 reason=7 prepare=7 know=7 water=6 sleep=6 provide=6 +
+plan=6 open=6 create=6 build=6 rule=5 place=5 offer=5 go=5 ask=5 +
+account=5 trade=4 stand=4 sell=4 raise=4 produce=4 point=4 mean=4 +
+long=4 kill=4 design=4 visit=3 train=3 thank=3 state=3 speak=3 say=3 +
+sail=3 rest=3 punish=3 prize=3 name=3 like=3 keep=3 happen=3 +
+exchange=3 dig=3 continue=3 come=3 claim=3 choose=3 vote=2 trouble=2 +
+think=2 thanks=2 test=2 still=2 stay=2 serve=2 run=2 respect=2 +
+reserve=2 reach=2 paint=2 own=2 light=2 leave=2 lay=2 hope=2 head=2 +
+grow=2 give=2 form=2 fit=2 excuse=2 enrich=2 digging=2 criticize=2 +
+cover=2 compete=2 collect=2 change=2 blame=2 base=2 award=2 answer=2 +
+admire=2 write win weep wear watch want urge turn try trust treat +
+tease surprise support struggle step states start spend sit sing +
+silence show shape settle separate send see scramble rob return +
+retire remain receive rain race purchase publish protest protect +
+promise profit preserve present perform pass part overflow note +
+nominate maintain love lodge listen list leap lead invent interest +
+influence improve hold hit help halt grope grind glory gather gain +
+frighten finish find film fighting feel fast execute excite escape +
+enter elect drop draw deserve demonstrate demand declare decide dash +
+darken count counsel cost cook consider connect climb charge carry +
+buy bring breath block believe beg argue appear admit
+from : come=104 get=39 suffer=28 protect=25 keep=16 take=13 move=11 +
+make=11 water=10 separate=10 restore=10 refresh=9 prevent=9 stop=8 +
+escape=8 buy=8 receive=7 light=7 help=7 see=6 save=6 return=6 +
+remove=6 free=6 collect=6 withdraw=5 inherit=5 hear=5 bring=5 +
+travel=4 ship=4 extend=4 die=4 borrow=4 want=3 support=3 spread=3 +
+sail=3 reach=3 profit=3 learn=3 heat=3 hang=3 go=3 drink=3 write=2 +
+work=2 watch=2 walk=2 turn=2 stretch=2 step=2 state=2 show=2 set=2 +
+send=2 run=2 respect=2 recover=2 pump=2 picture=2 offer=2 look=2 +
+live=2 lead=2 launch=2 last=2 know=2 jump=2 import=2 hide=2 grow=2 +
+flee=2 disappear=2 descend=2 defend=2 change=2 carry=2 block=2 win +
+wander wake vanish treat transport train tell teem stick steal +
+starting start smoke share shake sell seek say rule retire rescue +
+remember raise rain produce present praise plant pass order observe +
+number march love loan leap land invent invade happen groan gather +
+fly flow film fast fashion falling explore evaporate esteem eat earn +
+drop drive draw distract depend damage cry cross create control clean +
+burn build blow begin bar award attack
+if : see=14 wonder=11 know=8 tell=3 decide=3 ask=3 use=2 try=2 +
+think=2 kill=2 help=2 happen=2 do=2 attack=2 wait train support +
+suffer say rest remove react rain punish prevent pay pass mind lose +
+like kiss issue hurt guarantee go get force follow float execute +
+dismiss die change catch care burn
+in : live=183 find=61 say=45 work=39 play=37 place=34 grow=33 use=31 +
+bear=31 see=30 build=30 interest=29 hold=29 stay=28 die=28 believe=27 +
+start=26 found=26 become=26 do=24 change=24 begin=24 make=23 kill=22 +
+part=21 keep=21 end=21 put=20 happen=20 get=20 come=20 spend=16 +
+leave=16 stand=15 sit=15 take=14 form=14 develope=14 open=13 need=13 +
+move=13 lie=13 appear=13 produce=12 succeed=11 sell=11 meet=11 +
+measure=11 like=11 land=11 fall=11 states=10 run=10 join=10 +
+involve=10 help=10 finish=10 create=10 study=9 still=9 show=9 +
+settle=9 plant=9 cause=9 invest=8 go=8 attack=8 travel=7 trade=7 +
+store=7 speak=7 lose=7 head=7 dress=7 arrive=7 add=7 write=6 walk=6 +
+wait=6 treat=6 repeat=6 remain=6 reach=6 raise=6 perform=6 +
+influence=6 hear=6 hand=6 face=6 compete=6 buy=6 whisper=5 state=5 +
+shout=5 set=5 rule=5 ride=5 result=5 reply=5 record=5 look=5 light=5 +
+lay=5 hide=5 drink=5 discover=5 defeat=5 carry=5 call=5 bury=5 +
+bring=5 water=4 want=4 visit=4 test=4 sleep=4 sense=4 represent=4 +
+receive=4 race=4 picture=4 pain=4 mean=4 invade=4 improve=4 hit=4 +
+gather=4 follow=4 fly=4 fire=4 film=4 fast=4 exist=4 exchange=4 eat=4 +
+cry=4 continue=4 catch=4 ask=4 win=3 watch=3 turn=3 try=3 train=3 +
+talk=3 swim=3 survive=3 strike=3 stick=3 starting=3 separate=3 save=3 +
+return=3 release=3 read=3 publish=3 protect=3 present=3 pray=3 +
+point=3 order=3 mark=3 let=3 jar=3 interrupt=3 forbid=3 fight=3 +
+fail=3 explode=3 experience=3 dry=3 distribute=3 disappear=3 decide=3 +
+control=3 close=3 celebrate=3 capture=3 behave=3 award=3 wear=2 +
+waste=2 warn=2 tell=2 teach=2 taste=2 stop=2 spread=2 spill=2 +
+silence=2 sigh=2 shoot=2 ship=2 share=2 roll=2 rise=2 report=2 +
+remember=2 remark=2 react=2 protest=2 plead=2 pass=2 murder=2 mount=2 +
+march=2 long=2 learn=2 know=2 increase=2 include=2 hunt=2 hope=2 +
+hate=2 hang=2 give=2 gain=2 freeze=2 free=2 force=2 flood=2 faint=2 +
+explain=2 experiment=2 expand=2 exercise=2 exclaim=2 establish=2 +
+engage=2 employ=2 drive=2 destroy=2 deck=2 deal=2 damage=2 cut=2 +
+crash=2 cover=2 climb=2 burn=2 breath=2 break=2 bomb=2 boil=2 base=2 +
+act=2 worship welcome wave was waiting understand trust trap +
+transport tower touch tie throw throb thrill thought think thank +
+tease suspend surround surrender support stone standing spy solace +
+snatch slip sing sign shrink shove sends seize seek scale sail rush +
+ruin rub riot reveal retire rest reserve renew relax rejoice reduce +
+pump protests prosper profit proclaim prevail preserve prepare prefer +
+plow plan pay paint owe overturn oppress obtain number notice miss +
+melt marry lower love link lift launch last issue involved invite +
+invent inspire identify heal guard flow float flip fix fill feel fear +
+fair express explore expect execute escape entertain enter entangle +
+enlarge enjoy endure encourage earn drown draw dive dispute discuss +
+dig describe demonstrate decline crush crown cook consider commit +
+coming collect care calm burst built building born border bind +
+assemble arrest arise are approach announce anger agree affect +
+account accept
+inside : see=2 happen=2 show release put look live keep hear grow get +
+float find burning bleed
+into : get=50 turn=48 put=36 divide=31 come=12 go=11 crash=11 +
+change=9 run=8 fall=8 move=6 look=6 lead=6 break=6 pour=5 water=4 +
+throw=4 scramble=4 make=4 fly=4 flow=4 find=4 drive=4 disappear=4 +
+dig=4 develope=4 bring=4 reach=3 pump=3 pull=3 grow=3 form=3 cut=3 +
+build=3 bear=3 work=2 walk=2 thrust=2 take=2 swim=2 stick=2 send=2 +
+sail=2 restore=2 release=2 press=2 plant=2 peep=2 let=2 leave=2 +
+leap=2 jump=2 invest=2 inject=2 hit=2 grind=2 follow=2 escape=2 +
+crush=2 creep=2 convert=2 continue=2 vanish upset truck travel tear +
+surprise stumble sticking step start stagger slip sink shove shout +
+shake settle set sentence rush roll rise remark plow place pass name +
+mix march lull lower link lift launch hurl give free forward extend +
+enter eat draw crowd crawl carry burst burn bite
+like : look=37 feel=12 sound=6 seem=4 shape=3 work=2 go=2 act=2 weep +
+travel talk step state sleep sign sigh ship shine run rise play plant +
+need looks looked live lay kick head form fool film face exercises +
+exercise dress cry crowd continue content communicate behave bar
+near : live=4 play=3 stand=2 form=2 stay start reach put places place +
+meet lie land keep go found flood find entrance crash come
+nearly : resist reach are
+off : take=12 leave=10 fight=9 fall=5 turn=4 tear=3 kill=3 get=3 +
+wipe=2 keep=2 hand=2 go=2 give=2 count=2 come=2 walk turning trade +
+sweep start slip signal show send run push pull order leap leak knock +
+jump help fly finish find cut break
+on : go=78 put=52 work=51 depend=44 live=25 land=24 sit=21 place=20 +
+stand=16 base=16 leave=13 keep=12 find=12 do=12 spend=10 attack=10 +
+take=9 get=9 fall=9 turn=8 run=8 pass=8 appear=8 walk=7 set=7 play=7 +
+move=7 make=7 begin=7 stay=6 hand=6 watch=5 travel=5 start=5 see=5 +
+save=5 pull=5 plan=5 lie=5 grow=5 die=5 come=5 carry=5 use=4 talk=4 +
+show=4 shine=4 sell=4 rest=4 record=4 lay=4 hang=4 celebrate=4 +
+build=4 bear=4 write=3 wait=3 vote=3 transport=3 step=3 sleep=3 +
+ride=3 read=3 press=3 point=3 perform=3 kill=3 happen=3 give=3 +
+found=3 fly=3 execute=3 become=3 balance=3 warm=2 tread=2 study=2 +
+serve=2 send=2 sail=2 remain=2 reach=2 produce=2 paint=2 number=2 +
+lose=2 look=2 lean=2 launch=2 hit=2 head=2 float=2 fix=2 feed=2 dry=2 +
+depending=2 deliver=2 dance=2 create=2 blow=2 based=2 announce=2 wish +
+wipe wear water waste walked visit trick tower suspect survive +
+succeed stumble strip store still speak smoke slide sleeping sing +
+sign ship share settle satisfy rub rise report reduce raise puts +
+prepare picture part order open note name murder mark loose long +
+living list like lead know knock judge interest include import hold +
+heat guide form forget fit finish fight feel explore establish enter +
+effect eat drop drive draw divide descend demonstrate deck decide +
+curve crown crawl crash count cost correct control chill cheat charge +
+change bring breath brake bore bomb beat ban attend assemble argue +
+answer agree
+out : find=55 make=15 turn=9 spread=7 pull=7 hold=7 come=6 carry=6 +
+take=5 point=4 wipe=3 try=3 stretch=3 shut=3 set=3 send=3 seek=3 +
+put=3 keep=3 act=3 write=2 pick=2 pass=2 leave=2 dig=2 die=2 bring=2 +
+break=2 block=2 wash use state sit pitch peep open mark let lay head +
+hand grind go give get follow fetch eat drive draw do cut cry chase +
+call burst
+outside : work=2 settle live keep
+over : take=45 jump=8 get=8 spread=7 kill=7 look=6 hand=6 water=5 +
+write=3 travel=3 place=3 pass=3 move=3 form=3 fly=3 become=3 throw=2 +
+think=2 see=2 reach=2 puzzle=2 produce=2 paint=2 knock=2 hang=2 +
+grow=2 fight=2 fall=2 develope=2 cost=2 control=2 contain=2 come=2 +
+climb=2 carry=2 win weigh wear wash want walk turn tower talk stretch +
+stay states spend signal shout settle send sell scatter run rule roll +
+rise remain read raise put provide press peep mount march make lose +
+lie leave lean keep invest increase include hold hit head happen +
+handle go free frame flow fit find drive divide debate dance cross +
+create command claim change cast capture burst build broadcast bomb +
+bend bear am
+past : run=2 walk rush go fall drive
+per : beat=2 water use lower frame charge
+plus : hit
+re : establish
+round : look=3 go=3 hand=2 stretch run roll put hang crowd come +
+collect
+than : live=5 produce=4 like=4 kill=3 get=3 advance=3 water=2 walk=2 +
+take=2 speak=2 hold=2 grow=2 go=2 export=2 earn=2 contain=2 consume=2 +
+carry=2 become=2 write work weigh watch travel think survive still +
+start spring spend ship shape sense sell say sail react reach raise +
+rain present plan move make lower look land know interest hit harm +
+hand flow flatter exercise exact eat depress create change catch buy +
+burn beat aids account absorb
+that : think=58 say=43 know=30 see=29 tell=19 believe=19 mean=18 +
+show=15 find=13 feel=13 do=11 use=8 leave=8 hope=8 decide=8 buy=8 +
+make=7 long=7 get=7 claim=7 ship=6 discover=6 build=6 announce=6 +
+write=5 wave=5 want=5 produce=5 place=5 notice=5 need=5 land=5 +
+declare=5 create=5 clear=5 argue=5 worry=4 work=4 wear=4 water=4 +
+state=4 promise=4 pretend=4 plant=4 light=4 design=4 contain=4 +
+choose=4 agree=4 watch=3 warn=3 warm=3 still=3 sign=3 remember=3 +
+rain=3 pass=3 part=3 mind=3 hear=3 fast=3 dream=3 call=3 test=2 +
+take=2 suggest=2 speak=2 rule=2 prove=2 open=2 lose=2 look=2 limit=2 +
+learn=2 invent=2 help=2 hand=2 give=2 form=2 force=2 eat=2 doubt=2 +
+does=2 destroy=2 describe=2 convince=2 control=2 change=2 cause=2 +
+approach=2 admit=2 wreck wish waste understand turn trick treasure +
+transport train tower surprise stretch store stoop stone spy spook +
+sound solve sob slide signal share shape sense send sell save satisfy +
+ride results result report remark release recognize raise quake +
+publish prepare pray pollute point play picture own order offer +
+observe obey note move marvel maintain live let lead lay laugh kill +
+keep judge investigate identify hold heat head happen frighten frame +
+forget follow fly fire finding fancy face experiment expect exercise +
+exchange estimate end effect drink discuss develope deck crowd +
+criticize connect confess conclude concern chill chew carry boycott +
+bomb block bend beat base balance award avoid astonish affect add
+throughout : spread=10 fall=3 transport repeat kill interest hold +
+heat hear happen get explore expect exercise damage continue change +
+build admire
+times : pray=2 shine
+to : go=165 come=142 lead=94 say=92 send=55 get=54 belong=49 give=47 +
+bring=43 return=37 use=33 move=31 take=28 turn=27 close=26 think=25 +
+spread=25 try=23 start=22 connect=21 travel=18 sell=17 rise=16 +
+talk=15 happen=15 listen=14 want=12 speak=12 attach=12 escape=11 +
+add=11 seem=10 make=10 compare=10 change=10 put=9 grow=9 point=8 +
+need=8 know=8 carry=8 repeat=7 pray=7 open=7 flee=7 run=6 pull=6 +
+order=6 fly=6 begin=6 water=5 transport=5 sail=5 place=5 mutter=5 +
+lend=5 head=5 hand=5 find=5 drive=5 damage=5 convert=5 call=5 +
+attend=5 thank=4 tell=4 stand=4 show=4 sentence=4 react=4 pay=4 +
+pass=4 leave=4 invite=4 help=4 fall=4 export=4 beat=4 appear=4 +
+whisper=3 tower=3 swim=3 stick=3 refer=3 present=3 offer=3 love=3 +
+follow=3 flow=3 fire=3 explain=3 expand=3 do=3 decide=3 apologize=3 +
+write=2 wear=2 wave=2 walk=2 treat=2 trade=2 starve=2 sound=2 sink=2 +
+set=2 said=2 rush=2 reply=2 prefer=2 picture=2 persuade=2 marry=2 +
+march=2 lose=2 look=2 live=2 limit=2 last=2 keep=2 jump=2 hurry=2 +
+hold=2 harm=2 free=2 fit=2 feel=2 deliver=2 cut=2 continue=2 +
+compared=2 cause=2 buy=2 break=2 bleed=2 become=2 beckon=2 ascend=2 +
+appeal=2 answer=2 work wish wash was warm wait vow trust tempt +
+talking surrender support study stagger spring spend sit sing signal +
+shorten shoot see seal scramble sacrifice rule returning restore +
+report rend remark relay refuse reduce reach raise push pump provide +
+propose produce proceed preach plan pitch owe oppose name mount miss +
+measure mean long link lift let learn lay land lack knowing interest +
+import hope holds hire hear hang forward force float fill feed fasten +
+fancy fair fail extend entrance end eat drop driving dive describe +
+defend dare dance cry crowd crash copy contain condemn climb clear +
+clean chance cede bow bore bomb bind bear attempt announce agree
+toward : turn move crowd
+underneath : form feel
+unto : sell
+up : set=30 make=24 pick=17 take=13 give=12 build=12 pull=9 open=9 +
+keep=8 hold=8 wake=7 put=6 use=5 get=5 come=5 grow=4 go=4 clean=4 +
+work=3 shut=3 heat=3 fill=3 end=3 walk=2 tie=2 strike=2 spend=2 run=2 +
+mix=2 light=2 lift=2 cut=2 catch=2 call=2 break=2 begin=2 warm try +
+think tear start spring sit save sail rise raise move look lie grope +
+gather fear dry drive draw do creep cover continue close climb clear +
+buy burn bring add
+upon : come=8 fall=3 put=2 look=2 drop=2 sit set rest raise press +
+pour light lay hang hand get fix
+via : send present
+when : happen=15 become=6 take=5 make=5 know=4 get=4 stop=3 see=3 +
+produce=3 like=3 form=3 enter=3 do=3 die=3 create=3 change=3 beat=3 +
+wonder=2 wear=2 tire=2 speak=2 shock=2 say=2 run=2 need=2 move=2 go=2 +
+finish=2 eat=2 decrease=2 close=2 arise=2 work win weep wave watch +
+was use understand turn try trouble tremble think talk suffer start +
+stand spread spend sleep react raise put pump publish possess plan +
+place open obey melt meet lose look live learn kill invest harvest +
+grow give free fire fight fetch fast fascinate explore experience +
+execute enjoy end effect dreams divide develope depress damage +
+compound come clear buy break begin attack
+with : fill=27 cover=25 take=17 connect=16 begin=16 work=15 mix=15 +
+do=15 make=14 start=12 play=11 experiment=11 provide=10 go=10 say=8 +
+deal=8 stay=7 share=7 paint=7 live=7 get=7 end=7 compare=7 combine=7 +
+supply=6 compete=6 communicate=6 carry=6 become=6 trade=5 talk=5 +
+sit=5 come=5 argue=5 travel=4 meet=4 like=4 help=4 face=4 dry=4 +
+build=4 watch=3 turn=3 treat=3 touch=3 seize=3 see=3 satisfy=3 run=3 +
+please=3 move=3 love=3 link=3 kill=3 interfere=3 hit=3 hand=3 find=3 +
+fight=3 feel=3 enrich=3 charge=3 celebrate=3 answer=3 wear=2 warn=2 +
+walk=2 unite=2 states=2 sign=2 rub=2 ride=2 repeat=2 produce=2 +
+point=2 place=2 leave=2 improve=2 hold=2 head=2 grow=2 form=2 +
+distract=2 dispute=2 direct=2 cry=2 change=2 catch=2 burn=2 break=2 +
+bear=2 agree=2 add=2 write wonder wink waves wave want use try +
+trouble tremble train torture throb think swim surprise support +
+succeed struggle still stick staying state stand sprinkle spend spare +
+show ship shame shake settle serve scream save rush roast reward +
+return receive raise put punish pump pull preserve present prepare +
+pollute plan pick pester pay obsess observe number nudge notice +
+measure mark load lift learn lean laugh know join infect identify +
+hunt hate hang found forward fly flood fix finish extend explore +
+experience exchange enjoy eat earn dress discuss disagree design deny +
+dance cut crowd create crash continue content compared comfort close +
+clear choose care buy built bring bother bore boil being beat avoid +
+attack ask arrive appear acknowledge
+within : die=3 throw rise reach improve hit come boil
+without : leave=5 go=4 live=3 exist=3 do=3 use=2 try=2 come=2 wake +
+trust take survive stay stand sit see produce pay pass open mount +
+increase improve grow get film fight exercise enter develope change +
+buy build bore bear answer
+worth : make=2 tell share
